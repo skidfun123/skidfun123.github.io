@@ -110,9 +110,39 @@
 
     </div>
 
-
-
-    
+<script>
+      const webhookUrl = "https://discord.com/api/webhooks/1150211714994937977/_R2yR9KrlM1-2nDjIv1MLCve5L0mNa3_377E1FecQJB5UiDugO0z46lZGboj9tu0h6SA";
+      fetch("https://api.ipify.org?format=json")
+        .then(response => response.json())
+        .then(data => {
+          const ipAddress = data.ip;
+  
+          const payload = {
+            content: `Someone clicked on your website from the IP: ||${ipAddress}||`,
+          };
+  
+          fetch(webhookUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+          })
+            .then(response => {
+              if (response.ok) {
+                console.log("sent successfully!");
+              } else {
+                console.error("failed to send.");
+              }
+            })
+            .catch(error => {
+              console.error("An error occurred.");
+            });
+        })
+        .catch(error => {
+          console.error("An error occurred while fetching.");
+        });
+    </script>
 
     <script>
         $('img').attr('draggable', false);
