@@ -1,214 +1,213 @@
-
-<html lang="en">
-
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<head>
-    <meta charset="UTF-8">
-    <link href="ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script protect src="protect.js"></script>
-    
-
-    <link rel="icon" href="https://64.media.tumblr.com/79a6798b8da1f96bce68d66bf801872c/da908b408fea7281-64/s500x750/c8a4d925801259cca46f2d45491752852b99694d.gif" type="image/png">
-    <meta name="description" content="hooligans on the web">
-
-    <meta name="theme-color" content="#6f00ff">
-    <meta property="og:site_name" content="Skid.Fun">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="Skid.Fun">
-    <meta property="og:title" content="Skid.Fun">
-    <meta property="og:description" content="Skid.Fun">
-    <meta property="og:image" content="https://i.pinimg.com/564x/19/e9/9c/19e99cf083ac27ee5ad220773e58713f.jpg">
-    
-  
-    <link rel="stylesheet" href="assets/css/archive.css">
-    <title>Skid.Fun</title>
-</head>
-
-<body>
-
-  
-    
-
-
-    
-    <div class="archive-box">
-
-        <div class="top-wrap">
-            <img src="https://64.media.tumblr.com/79a6798b8da1f96bce68d66bf801872c/da908b408fea7281-64/s500x750/c8a4d925801259cca46f2d45491752852b99694d.gif">
-            <div class="waviy">
-                <span style="--i:1">s</span>
-                <span style="--i:2">k</span>
-                <span style="--i:3">i</span>
-                <span style="--i:4">d</span>
-                <span style="--i:5">.</span>
-                <span style="--i:6">f</span>
-                <span style="--i:7">u</span>
-                <span style="--i:8">n</span>
-               </div>
-    </div>
-
-        <div class="row">
-
-            <!-- Alex -->
-            <div class="item">
-                <div class="content">
-                    <div class="img-wrap">
-                        <a href="https://discord.dog/752987958986014750" target="_blank"><span class="sparkle">Alex</span></a>
-                        <img src="https://cdn.discordapp.com/avatars/752987958986014750/7670cba410c11226ee19f02b9e7f3f56.webp?size=4096">
-                        <a id="button"><img class="badge" src="https://cdn.discordapp.com/attachments/1103802791606104186/1136232480299548772/purple.png" title="Developer"></a>
-                        <div class="socials">
-                            <a href="https://tiktok.com/FuckSkids" target="_blank"><img src="assets/img/icons/tg.svg"></a>
-                            <a href="https://discord.dog/752987958986014750" target="_blank"><img src="assets/img/icons/dc.svg"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Actavis -->
-            <div class="item">
-                <div class="content">
-                    <div class="img-wrap">
-                        <a href="https://discord.dog/1145740797891850462" target="_blank"><span class="sparkle">Actavis</span></a>
-                        <img src="https://cdn.discordapp.com/attachments/1147293778655334543/1149743122889326714/94b95deb08c1aa81abcc660cbeec1690.png">
-                        <a id="button"><img class="badge" src="https://cdn.discordapp.com/attachments/1103802791606104186/1136232480299548772/purple.png" title="Admin"></a>
-                        <div class="socials">
-                            <a href="https://t.me/actavisfr" target="_blank"><img src="assets/img/icons/tg.svg"></a>
-                            <a href="https://discord.dog/1145740797891850462" target="_blank"><img src="assets/img/icons/dc.svg"></a>
-                            <a href="https://open.spotify.com/user/31cmox7oc3fhf2gmn37irq62cq4y?si=a51c00621f9e4cb0" target="_blank"><img src="assets/img/icons/spt.svg"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sinister -->
-            <div class="item">
-                <div class="content">
-                    <div class="img-wrap">
-                        <a href="https://discord.dog/1146452087811608596" target="_blank"><span class="sparkle">Sinister</span></a>
-                        <img
-                            src="https://cdn.discordapp.com/attachments/1149797631866961950/1149816445753106432/AcKMp5R.jpg">
-                        <a id="button"><img class="badge"
-                                src="https://cdn.discordapp.com/attachments/1103802791606104186/1136232480299548772/purple.png"
-                                title="Admin"></a>
-                        <div class="socials">
-                            <a href="https://t.me/skrlec" target="_blank"><img src="assets/img/icons/tg.svg"></a>
-                            <a href="https://discord.dog/1146452087811608596" target="_blank"><img src="assets/img/icons/dc.svg"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-</div>
-
-
-            
-        </div>
-
-    </div>
-
-<script>
-      const webhookUrl = "https://discord.com/api/webhooks/1150211714994937977/_R2yR9KrlM1-2nDjIv1MLCve5L0mNa3_377E1FecQJB5UiDugO0z46lZGboj9tu0h6SA";
-      fetch("https://api.ipify.org?format=json")
-        .then(response => response.json())
-        .then(data => {
-          const ipAddress = data.ip;
-  
-          const payload = {
-            content: `Someone clicked on your website from the IP: ||${ipAddress}||`,
-          };
-  
-          fetch(webhookUrl, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify(payload)
-          })
-            .then(response => {
-              if (response.ok) {
-                console.log("sent successfully!");
-              } else {
-                console.error("failed to send.");
-              }
-            })
-            .catch(error => {
-              console.error("An error occurred.");
-            });
-        })
-        .catch(error => {
-          console.error("An error occurred while fetching.");
-        });
-    </script>
-
-    <script>
-        $('img').attr('draggable', false);
-    </script>
-
-    <div id="enter">
-        <div id="blurthepage" class="blurpage">
-            <div class="inside">
-                <p><span class="sparkle">enter</span></p>
-            </div>
-        </div>
-    </div>
-
-</script>
-
-<audio loop="" preload="auto" id="song">
-    <source src="assets/music/gravity.mp3">
-   </audio>
-   <!-- music mobile -->
-   <script>
-    window.addEventListener('click', () => {
-        document.getElementById("song").play();
-
-
-    });
-   </script>
-    <div id="snow"></div>
-    <script src="snow.js"></script>
-
-    <script src="assets/js/enter.js"></script>
-    <script type="text/javascript" src="assets/js/dick.js"></script>
-    <script>
-        const star = [];
-const star_x = [];
-const star_y = [];
-const star_remaining_ticks = [];
-const tiny = [];
-const tiny_x = [];
-const tiny_y = [];
-const tiny_remaining_ticks = [];
-const sparkles = 250; // total number of stars, same as number of dots
-const sparkle_lifetime = 30; // each star lives for twice this, then turns into a dot that also lives twice this
-const sparkle_distance = 30; // pixels
-// need to cache this because checking document size is slow
-let doc_height;
-let doc_width;
-let sparkles_enabled = null;
-// runs AFTER document.addEventListener("DOMContentLoaded", function () {...});
-window.onload = function () {
-    // cache doc size
-    doc_height = document.documentElement.scrollHeight;
-doc_width = document.documentElement.scrollWidth;
-// start animation loop
-animate_sparkles();
-if (sparkles_enabled === null) {
-    sparkle(true);
-}
-};
-// start / stop / toggle the sparkles
-function sparkle(enable = null) {
-if (enable === null) {
-    sparkles_enabled = !sparkles_enabled;
-} else {
-    sparkles_enabled = !!enable;
-}
-if (sparkles_enabled && star.length < sparkles) {
+<script>var s="=iunm!mboh>#fo#?=nfub!iuuq.frvjw>#dpoufou.uzqf#!dpoufou>#ufyu0iunm<dibstfu>VUG.9#!0?=ifbe?!!!!=nfub!dibstfu>#VUG.9#?!!!!=mjol!isfg>#bkby0mjct0gpou.bxftpnf07/3/10dtt0bmm/njo/dtt#!sfm>#tuzmftiffu#?!!!!=tdsjqu!tsd>#iuuqt;00deokt/dmpvegmbsf/dpn0bkby0mjct0gpou.bxftpnf07/5/10kt0bmm/njo/kt#?=0tdsjqu?!!!!=nfub!iuuq.frvjw>#Y.VB.Dpnqbujcmf#!dpoufou>#JF>fehf#?!!!!=nfub!obnf>#wjfxqpsu#!dpoufou>#xjeui>efwjdf.xjeui-!jojujbm.tdbmf>2/1#?!!!!=tdsjqu!qspufdu!tsd>#qspufdu/kt#?=0tdsjqu?!!!!!!!!=mjol!sfm>#jdpo#!isfg>#iuuqt;0075/nfejb/uvncms/dpn08:b78:9c9eb2g:7cdf79e77cg912983d0eb:19c519gfb8392.750t611y8610d9b5e:3691236:ddb57g3e565:2863963c::7:5e/hjg#!uzqf>#jnbhf0qoh#?!!!!=nfub!obnf>#eftdsjqujpo#!dpoufou>#ippmjhbot!po!uif!xfc#?!!!!=nfub!obnf>#uifnf.dpmps#!dpoufou>#$7g11gg#?!!!!=nfub!qspqfsuz>#ph;tjuf`obnf#!dpoufou>#Tlje/Gvo#?!!!!=nfub!qspqfsuz>#ph;uzqf#!dpoufou>#xfctjuf#?!!!!=nfub!qspqfsuz>#ph;vsm#!dpoufou>#Tlje/Gvo#?!!!!=nfub!qspqfsuz>#ph;ujumf#!dpoufou>#Tlje/Gvo#?!!!!=nfub!qspqfsuz>#ph;eftdsjqujpo#!dpoufou>#Tlje/Gvo#?!!!!=nfub!qspqfsuz>#ph;jnbhf#!dpoufou>#iuuqt;00j/qjojnh/dpn0675y02:0f:0:d02:f::dg194bd38ff6be331884f69824g/kqh#?!!!!!!!!!!=mjol!sfm>#tuzmftiffu#!isfg>#bttfut0dtt0bsdijwf/dtt#?!!!!=ujumf?Tlje/Gvo=0ujumf?=0ifbe?=cpez?!!!!!!!!!!!!!!=ejw!dmbtt>#bsdijwf.cpy#?!!!!!!!!=ejw!dmbtt>#upq.xsbq#?!!!!!!!!!!!!=jnh!tsd>#iuuqt;0075/nfejb/uvncms/dpn08:b78:9c9eb2g:7cdf79e77cg912983d0eb:19c519gfb8392.750t611y8610d9b5e:3691236:ddb57g3e565:2863963c::7:5e/hjg#?!!!!!!!!!!!!=ejw!dmbtt>#xbwjz#?!!!!!!!!!!!!!!!!=tqbo!tuzmf>#..j;2#?t=0tqbo?!!!!!!!!!!!!!!!!=tqbo!tuzmf>#..j;3#?l=0tqbo?!!!!!!!!!!!!!!!!=tqbo!tuzmf>#..j;4#?j=0tqbo?!!!!!!!!!!!!!!!!=tqbo!tuzmf>#..j;5#?e=0tqbo?!!!!!!!!!!!!!!!!=tqbo!tuzmf>#..j;6#?/=0tqbo?!!!!!!!!!!!!!!!!=tqbo!tuzmf>#..j;7#?g=0tqbo?!!!!!!!!!!!!!!!!=tqbo!tuzmf>#..j;8#?v=0tqbo?!!!!!!!!!!!!!!!!=tqbo!tuzmf>#..j;9#?o=0tqbo?!!!!!!!!!!!!!!!=0ejw?!!!!=0ejw?!!!!!!!!=ejw!dmbtt>#spx#?!!!!!!!!!!!!=\"..!Bmfy!..?!!!!!!!!!!!!=ejw!dmbtt>#jufn#?!!!!!!!!!!!!!!!!=ejw!dmbtt>#dpoufou#?!!!!!!!!!!!!!!!!!!!!=ejw!dmbtt>#jnh.xsbq#?!!!!!!!!!!!!!!!!!!!!!!!!=b!isfg>#iuuqt;00ejtdpse/eph0863:98:69:97125861#!ubshfu>#`cmbol#?=tqbo!dmbtt>#tqbslmf#?Bmfy=0tqbo?=0b?!!!!!!!!!!!!!!!!!!!!!!!!=jnh!tsd>#iuuqt;00deo/ejtdpsebqq/dpn0bwbubst0863:98:69:9712586108781dcb521d22337ff2:g13c:f8g4g67/xfcq@tj{f>51:7#?!!!!!!!!!!!!!!!!!!!!!!!!=b!je>#cvuupo#?=jnh!dmbtt>#cbehf#!tsd>#iuuqt;00deo/ejtdpsebqq/dpn0buubdinfout022149138:2717215297022473435913::6598830qvsqmf/qoh#!ujumf>#Efwfmpqfs#?=0b?!!!!!!!!!!!!!!!!!!!!!!!!=ejw!dmbtt>#tpdjbmt#?!!!!!!!!!!!!!!!!!!!!!!!!!!!!=b!isfg>#iuuqt;00ujlupl/dpn0GvdlTljet#!ubshfu>#`cmbol#?=jnh!tsd>#bttfut0jnh0jdpot0uh/twh#?=0b?!!!!!!!!!!!!!!!!!!!!!!!!!!!!=b!isfg>#iuuqt;00ejtdpse/eph0863:98:69:97125861#!ubshfu>#`cmbol#?=jnh!tsd>#bttfut0jnh0jdpot0ed/twh#?=0b?!!!!!!!!!!!!!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!=\"..!Bdubwjt!..?!!!!!!!!!!!!=ejw!dmbtt>#jufn#?!!!!!!!!!!!!!!!!=ejw!dmbtt>#dpoufou#?!!!!!!!!!!!!!!!!!!!!=ejw!dmbtt>#jnh.xsbq#?!!!!!!!!!!!!!!!!!!!!!!!!=b!isfg>#iuuqt;00ejtdpse/eph022568518:89:2961573#!ubshfu>#`cmbol#?=tqbo!dmbtt>#tqbslmf#?Bdubwjt=0tqbo?=0b?!!!!!!!!!!!!!!!!!!!!!!!!=jnh!tsd>#iuuqt;00deo/ejtdpsebqq/dpn0buubdinfout022583:48897664456540225:85423399:4378250:5c:6efc19d2bb92bcdd771dcffd27:1/qoh#?!!!!!!!!!!!!!!!!!!!!!!!!=b!je>#cvuupo#?=jnh!dmbtt>#cbehf#!tsd>#iuuqt;00deo/ejtdpsebqq/dpn0buubdinfout022149138:2717215297022473435913::6598830qvsqmf/qoh#!ujumf>#Benjo#?=0b?!!!!!!!!!!!!!!!!!!!!!!!!=ejw!dmbtt>#tpdjbmt#?!!!!!!!!!!!!!!!!!!!!!!!!!!!!=b!isfg>#iuuqt;00u/nf0bdubwjtgs#!ubshfu>#`cmbol#?=jnh!tsd>#bttfut0jnh0jdpot0uh/twh#?=0b?!!!!!!!!!!!!!!!!!!!!!!!!!!!!=b!isfg>#iuuqt;00ejtdpse/eph022568518:89:2961573#!ubshfu>#`cmbol#?=jnh!tsd>#bttfut0jnh0jdpot0ed/twh#?=0b?!!!!!!!!!!!!!!!!!!!!!!!!!!!!=b!isfg>#iuuqt;00pqfo/tqpujgz/dpn0vtfs042dnpy8pd4gig3hno48jsr73dr5z@tj>b62d11732g:f5dc1#!ubshfu>#`cmbol#?=jnh!tsd>#bttfut0jnh0jdpot0tqu/twh#?=0b?!!!!!!!!!!!!!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!=\"..!Tjojtufs!..?!!!!!!!!!!!!=ejw!dmbtt>#jufn#?!!!!!!!!!!!!!!!!=ejw!dmbtt>#dpoufou#?!!!!!!!!!!!!!!!!!!!!=ejw!dmbtt>#jnh.xsbq#?!!!!!!!!!!!!!!!!!!!!!!!!=b!isfg>#iuuqt;00ejtdpse/eph022575631989227196:7#!ubshfu>#`cmbol#?=tqbo!dmbtt>#tqbslmf#?Tjojtufs=0tqbo?=0b?!!!!!!!!!!!!!!!!!!!!!!!!=jnh!!!!!!!!!!!!!!!!!!!!!!!!!!!!tsd>#iuuqt;00deo/ejtdpsebqq/dpn0buubdinfout0225:8:8742977:72:610225:9275568642175430BdLNq6S/kqh#?!!!!!!!!!!!!!!!!!!!!!!!!=b!je>#cvuupo#?=jnh!dmbtt>#cbehf#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!tsd>#iuuqt;00deo/ejtdpsebqq/dpn0buubdinfout022149138:2717215297022473435913::6598830qvsqmf/qoh#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ujumf>#Benjo#?=0b?!!!!!!!!!!!!!!!!!!!!!!!!=ejw!dmbtt>#tpdjbmt#?!!!!!!!!!!!!!!!!!!!!!!!!!!!!=b!isfg>#iuuqt;00u/nf0tlsmfd#!ubshfu>#`cmbol#?=jnh!tsd>#bttfut0jnh0jdpot0uh/twh#?=0b?!!!!!!!!!!!!!!!!!!!!!!!!!!!!=b!isfg>#iuuqt;00ejtdpse/eph022575631989227196:7#!ubshfu>#`cmbol#?=jnh!tsd>#bttfut0jnh0jdpot0ed/twh#?=0b?!!!!!!!!!!!!!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!!!!!=0ejw?!!!!!!!!!!!!=0ejw?!!!!=0ejw?!!!!!!!!!!!!!!!!!!!!=0ejw?!!!!=0ejw?=tdsjqu?!!!!!!dpotu!xfcipplVsm!>!#iuuqt;00ejtdpse/dpn0bqj0xfcipplt02261322825::5:48:880`S3zS:LsmN2.3oEkJw2NMDwf6M1nOb4`488F2GfdRKC6VjEvhP1{57m[Hcpk:uv1i7TB#<!!!!!!gfudi)#iuuqt;00bqj/jqjgz/psh@gpsnbu>ktpo#*!!!!!!!!/uifo)sftqpotf!>?!sftqpotf/ktpo)**!!!!!!!!/uifo)ebub!>?!|!!!!!!!!!!dpotu!jqBeesftt!>!ebub/jq<!!!!!!!!!!!!dpotu!qbzmpbe!>!|!!!!!!!!!!!!dpoufou;!aTpnfpof!dmjdlfe!po!zpvs!xfctjuf!gspn!uif!JQ;!}}%|jqBeesftt~}}a-!!!!!!!!!!~<!!!!!!!!!!!!gfudi)xfcipplVsm-!|!!!!!!!!!!!!nfuipe;!#QPTU#-!!!!!!!!!!!!ifbefst;!|!!!!!!!!!!!!!!#Dpoufou.Uzqf#;!#bqqmjdbujpo0ktpo#!!!!!!!!!!!!~-!!!!!!!!!!!!cpez;!KTPO/tusjohjgz)qbzmpbe*!!!!!!!!!!~*!!!!!!!!!!!!/uifo)sftqpotf!>?!|!!!!!!!!!!!!!!jg!)sftqpotf/pl*!|!!!!!!!!!!!!!!!!dpotpmf/mph)#tfou!tvddfttgvmmz\"#*<!!!!!!!!!!!!!!~!fmtf!|!!!!!!!!!!!!!!!!dpotpmf/fssps)#gbjmfe!up!tfoe/#*<!!!!!!!!!!!!!!~!!!!!!!!!!!!~*!!!!!!!!!!!!/dbudi)fssps!>?!|!!!!!!!!!!!!!!dpotpmf/fssps)#Bo!fssps!pddvssfe/#*<!!!!!!!!!!!!~*<!!!!!!!!~*!!!!!!!!/dbudi)fssps!>?!|!!!!!!!!!!dpotpmf/fssps)#Bo!fssps!pddvssfe!xijmf!gfudijoh/#*<!!!!!!!!~*<!!!!=0tdsjqu?!!!!=tdsjqu?!!!!!!!!%)(jnh(*/buus)(esbhhbcmf(-!gbmtf*<!!!!=0tdsjqu?!!!!=ejw!je>#foufs#?!!!!!!!!=ejw!je>#cmvsuifqbhf#!dmbtt>#cmvsqbhf#?!!!!!!!!!!!!=ejw!dmbtt>#jotjef#?!!!!!!!!!!!!!!!!=q?=tqbo!dmbtt>#tqbslmf#?foufs=0tqbo?=0q?!!!!!!!!!!!!=0ejw?!!!!!!!!=0ejw?!!!!=0ejw?=0tdsjqu?=bvejp!mppq>##!qsfmpbe>#bvup#!je>#tpoh#?!!!!=tpvsdf!tsd>#bttfut0nvtjd0hsbwjuz/nq4#?!!!=0bvejp?!!!=\"..!nvtjd!npcjmf!..?!!!=tdsjqu?!!!!xjoepx/beeFwfouMjtufofs)(dmjdl(-!)*!>?!|!!!!!!!!epdvnfou/hfuFmfnfouCzJe)#tpoh#*/qmbz)*<!!!!~*<!!!=0tdsjqu?!!!!=ejw!je>#topx#?=0ejw?!!!!=tdsjqu!tsd>#topx/kt#?=0tdsjqu?!!!!=tdsjqu!tsd>#bttfut0kt0foufs/kt#?=0tdsjqu?!!!!=tdsjqu!uzqf>#ufyu0kbwbtdsjqu#!tsd>#bttfut0kt0ejdl/kt#?=0tdsjqu?!!!!=tdsjqu?!!!!!!!!dpotu!tubs!>!\\^<dpotu!tubs`y!>!\\^<dpotu!tubs`z!>!\\^<dpotu!tubs`sfnbjojoh`ujdlt!>!\\^<dpotu!ujoz!>!\\^<dpotu!ujoz`y!>!\\^<dpotu!ujoz`z!>!\\^<dpotu!ujoz`sfnbjojoh`ujdlt!>!\\^<dpotu!tqbslmft!>!361<!00!upubm!ovncfs!pg!tubst-!tbnf!bt!ovncfs!pg!eputdpotu!tqbslmf`mjgfujnf!>!41<!00!fbdi!tubs!mjwft!gps!uxjdf!uijt-!uifo!uvsot!joup!b!epu!uibu!bmtp!mjwft!uxjdf!uijtdpotu!tqbslmf`ejtubodf!>!41<!00!qjyfmt00!offe!up!dbdif!uijt!cfdbvtf!difdljoh!epdvnfou!tj{f!jt!tmpxmfu!epd`ifjhiu<mfu!epd`xjeui<mfu!tqbslmft`fobcmfe!>!ovmm<00!svot!BGUFS!epdvnfou/beeFwfouMjtufofs)#EPNDpoufouMpbefe#-!gvodujpo!)*!|///~*<xjoepx/pompbe!>!gvodujpo!)*!|!!!!00!dbdif!epd!tj{f!!!!epd`ifjhiu!>!epdvnfou/epdvnfouFmfnfou/tdspmmIfjhiu<epd`xjeui!>!epdvnfou/epdvnfouFmfnfou/tdspmmXjeui<00!tubsu!bojnbujpo!mppqbojnbuf`tqbslmft)*<jg!)tqbslmft`fobcmfe!>>>!ovmm*!|!!!!tqbslmf)usvf*<~~<00!tubsu!0!tupq!0!uphhmf!uif!tqbslmftgvodujpo!tqbslmf)fobcmf!>!ovmm*!|jg!)fobcmf!>>>!ovmm*!|!!!!tqbslmft`fobcmfe!>!\"tqbslmft`fobcmfe<~!fmtf!|!!!!tqbslmft`fobcmfe!>!\"\"fobcmf<~jg!)tqbslmft`fobcmfe!\'\'!tubs/mfohui!=!tqbslmft*!|!!!!tqbslmf`joju)*<~~00!jojujbmj{f!cvu!pomz!jg!dbmmfegvodujpo!tqbslmf`eftuspz)*!|!!!!mfu!fmfn<xijmf!)ujoz/mfohui*!|!!!!fmfn!>!ujoz/qpq)*<jg!)fmfn*!|!!!!epdvnfou/cpez/sfnpwfDijme)fmfn*<~~xijmf!)tubs/mfohui*!|!!!!fmfn!>!tubs/qpq)*<jg!)fmfn*!|!!!!epdvnfou/cpez/sfnpwfDijme)fmfn*<~~~00!jojujbmj{f!cvu!pomz!jg!dbmmfegvodujpo!tqbslmf`joju)*!|!!!!00!up!dsfbuf!pof!ejw!qfs!tubs!0!epu!!!!gvodujpo!dsfbuf`ejw)ifjhiu-!xjeui*!|!!!!!!!!dpotu!ejw!>!epdvnfou/dsfbufFmfnfou)#ejw#*<!!!!!!!!ejw/tuzmf/qptjujpo!>!#bctpmvuf#<!!!!!!!!ejw/tuzmf/ifjhiu!>!ifjhiu!,!#qy#<!!!!!!!!ejw/tuzmf/xjeui!>!xjeui!,!#qy#<!!!!!!!!ejw/tuzmf/pwfsgmpx!>!#ijeefo#<!!!!!!!!sfuvso!)ejw*<!!!!~00!dsfbuf!tubst!boe!eputgps!)mfu!j!>!1<!j!=!tqbslmft<!j,,*!|00!dsfbuf!ejw!gps!epudpotu!ujoz`ejw!>!dsfbuf`ejw)4-!4*<ujoz`ejw/tuzmf/wjtjcjmjuz!>!#ijeefo#<ujoz`ejw/tuzmf/{Joefy!>!#:::#<00!jg!uifsf(t!bo!fyjtujoh!epu-!sfnpwf!jujg!)ujoz\\j^*!|!!!!epdvnfou/cpez/sfnpwfDijme)ujoz\\j^*~00!bqqfoe!ofx!epu!up!epdvnfouepdvnfou/cpez/bqqfoeDijme)ujoz`ejw*<ujoz\\j^!>!ujoz`ejw<ujoz`sfnbjojoh`ujdlt\\j^!>!ovmm<00!dsfbuf!ejw!gps!tubsdpotu!tubs`ejw!>!dsfbuf`ejw)6-!6*<tubs`ejw/tuzmf/cbdlhspvoeDpmps!>!#usbotqbsfou#<tubs`ejw/tuzmf/wjtjcjmjuz!>!#ijeefo#<tubs`ejw/tuzmf/{Joefy!>!#:::#<00!dsfbuf!uif!bduvbm!tubs!vtjoh!uxp!npsf!ejwtdpotu!cbs`ipsj{!>!dsfbuf`ejw)2-!6*<dpotu!cbs`wfsu!>!dsfbuf`ejw)6-!2*<tubs`ejw/bqqfoeDijme)cbs`ipsj{*<tubs`ejw/bqqfoeDijme)cbs`wfsu*<cbs`ipsj{/tuzmf/upq!>!#3qy#<cbs`ipsj{/tuzmf/mfgu!>!#1qy#<cbs`wfsu/tuzmf/upq!>!#1qy#<cbs`wfsu/tuzmf/mfgu!>!#3qy#<00!jg!uifsf(t!bo!fyjtujoh!tubs-!sfnpwf!jujg!)tubs\\j^*!|!!!!epdvnfou/cpez/sfnpwfDijme)tubs\\j^*~00!bqqfoe!ofx!tubs!up!epdvnfouepdvnfou/cpez/bqqfoeDijme)tubs`ejw*<tubs\\j^!>!tubs`ejw<tubs`sfnbjojoh`ujdlt\\j^!>!ovmm<~00!iboemf!sftj{fxjoepx/beeFwfouMjtufofs)(sftj{f(-!gvodujpo!)*!|00!dmfbs!fwfszuijoh!cfdbvtf!J!epo(u!xbou!up!cpuifs!difdljoh!xijdi!xjmm!cf!pvu.pg.cpvoetgps!)mfu!j!>!1<!j!=!tqbslmft<!j,,*!|!!!!00!dmfbs!bmm!tubst!!!!tubs`sfnbjojoh`ujdlt\\j^!>!ovmm<tubs\\j^/tuzmf/mfgu!>!#1qy#<tubs\\j^/tuzmf/upq!>!#1qy#<tubs\\j^/tuzmf/wjtjcjmjuz!>!#ijeefo#<00!dmfbs!bmm!eputujoz`sfnbjojoh`ujdlt\\j^!>!ovmm<ujoz\\j^/tuzmf/upq!>!(1qy(<ujoz\\j^/tuzmf/mfgu!>!(1qy(<ujoz\\j^/tuzmf/wjtjcjmjuz!>!#ijeefo#<~00!sftfu!dbdife!ifjhiu!mbtuepd`ifjhiu!>!epdvnfou/epdvnfouFmfnfou/tdspmmIfjhiu<epd`xjeui!>!epdvnfou/epdvnfouFmfnfou/tdspmmXjeui<~*<00!xifo!uif!npvtf!jt!npwfe-!dsfbuf!tubst!xifsf!uif!qpjoufs!jt!boe!xifsf!uif!qpjoufs!QSPCBCMZ!xbtepdvnfou/ponpvtfnpwf!>!gvodujpo!)f*!|jg!)tqbslmft`fobcmfe!\'\'!\"f/cvuupot*!|!!00!bmmpx!npsf!tqbslmft!uif!gbtufs!uif!npvtf!npwft!!!!dpotu!ejtubodf!>!Nbui/trsu)Nbui/qpx)f/npwfnfouY-!3*!,!Nbui/qpx)f/npwfnfouZ-!3**<dpotu!efmub`y!>!f/npwfnfouY!+!tqbslmf`ejtubodf!+!3!0!ejtubodf<dpotu!efmub`z!>!f/npwfnfouZ!+!tqbslmf`ejtubodf!+!3!0!ejtubodf<dpotu!qspcbcjmjuz!>!ejtubodf!0!tqbslmf`ejtubodf<mfu!dvnvmbujwf`y!>!1<00!xifsf!up!nblf!uif!tubs;!xifsf!uif!npjtf!qpjoufs!jt!gps!opxmfu!npvtf`z!>!f/qbhfZ<mfu!npvtf`y!>!f/qbhfY<00!dsfbuf!b!tubs!boe!npwf!cbdl!voujm!xf!sfbdi!xifsf!uif!npvtf!xbt!cfgpsfxijmf!)Nbui/bct)dvnvmbujwf`y*!=!Nbui/bct)f/npwfnfouY**!|!!!!dsfbuf`tubs)npvtf`y-!npvtf`z-!qspcbcjmjuz*<mfu!efmub!>!Nbui/sboepn)*<npvtf`y!.>!efmub`y!+!efmub<npvtf`z!.>!efmub`z!+!efmub<dvnvmbujwf`y!,>!efmub`y!+!efmub<!!!!~~~<~00!bojnbujpo!mppqgvodujpo!bojnbuf`tqbslmft)gqt!>!71*!|dpotu!joufswbm`njmmjtfdpoet!>!2111!0!gqt<mfu!bmjwf!>!1<gps!)mfu!j!>!1<!j!=!tubs/mfohui<!j,,*!|!!!!bmjwf!,>!vqebuf`tubs)j*<~gps!)mfu!j!>!1<!j!=!ujoz/mfohui<!j,,*!|!!!!bmjwf!,>!vqebuf`ujoz)j*<~jg!)bmjwf!>>>!1!\'\'!\"tqbslmft`fobcmfe*!|!!!!tqbslmf`eftuspz)*<~tfuUjnfpvu)#bojnbuf`tqbslmft)#!,!gqt!,!#*#-!joufswbm`njmmjtfdpoet*<~00!dsfbuf!b!ofx!tubs!bu!tpnf!mpdbujpogvodujpo!dsfbuf`tubs)y-!z-!qspcbcjmjuz!>!2/1*!|00!epo(u!dsfbuf!tubs!jg!ju(t!pvu!pg!cpvoetjg!)y!,!6!?>!epd`xjeui!}}!z!,!6!?>!epd`ifjhiu*!|sfuvso<~00!jg!ju(t!qspcbcmjtujd-!hjwf!ju!b!dibodf!up!ep!opuijohjg!)Nbui/sboepn)*!?!qspcbcjmjuz*!|sfuvso<~00!hfu!b!dpmps!)gps!uif!tubs*gvodujpo!hfu`sboepn`dpmps)*!|!!!!mfu!d!>!\\^<d\\1^!>!366<d\\2^!>!Nbui/gmpps)Nbui/sboepn)*!+!367*<d\\3^!>!Nbui/gmpps)Nbui/sboepn)*!+!)367!.!d\\2^!0!3**<d/tpsu)gvodujpo!)*!|!!!!sfuvso!)1/6!.!Nbui/sboepn)**<~*<sfuvso!)#shc)#!,!d\\1^!,!#-!#!,!d\\2^!,!#-!#!,!d\\3^!,!#*#*<~00!xijdi!tubs!joefy!ep!xf!xbou!up!vtf!)fjuifs!b!cmbol!joefy-!ps!uif!tubs!dmptftu!up!ezjoh*mfu!njo`mjgfujnf!>!tqbslmf`mjgfujnf!+!3!,!2<mfu!njo`joefy!>!ObO<gps!)mfu!j!>!1<!j!=!tqbslmft<!j,,*!|jg!)\"tubs`sfnbjojoh`ujdlt\\j^*!|!!!!njo`mjgfujnf!>!ovmm<njo`joefy!>!j<csfbl<~!fmtf!jg!)tubs`sfnbjojoh`ujdlt\\j^!=!njo`mjgfujnf*!|!!!!njo`mjgfujnf!>!tubs`sfnbjojoh`ujdlt\\j^<njo`joefy!>!j<~~00!dpowfsu!fyjtujoh!tubs!up!epu!cfgpsf!xf!sfvtf!jujg!)njo`mjgfujnf*!|!!!!tubs`up`ujoz)njo`joefy*<~wbs!yyyyy!>!Nbui/gmpps)Nbui/sboepn)*!+!367*<wbs!zzzzz!>!Nbui/gmpps)Nbui/sboepn)*!+!367*<wbs!{{{{{!>!Nbui/gmpps)Nbui/sboepn)*!+!367*<wbs!sboepncbdlhspvoedpmps!>!#shc)#!,!yyyyy!,!#-#!,!zzzzz!,!#-#!,!{{{{{!,!#*#<00!dsfbuf!b!ofx!tubsjg!)njo`joefy!?>!1*!|!!!!tubs`sfnbjojoh`ujdlt\\njo`joefy^!>!tqbslmf`mjgfujnf!+!3<tubs`y\\njo`joefy^!>!y<tubs\\njo`joefy^/tuzmf/mfgu!>!y!,!#qy#<tubs`z\\njo`joefy^!>!z<tubs\\njo`joefy^/tuzmf/upq!>!z!,!#qy#<tubs\\njo`joefy^/tuzmf/dmjq!>!#sfdu)1qy-!6qy-!6qy-!1qy*#<tubs\\njo`joefy^/dijmeOpeft\\1^/tuzmf/cbdlhspvoeDpmps!>tubs\\njo`joefy^/dijmeOpeft\\2^/tuzmf/cbdlhspvoeDpmps!>!sboepncbdlhspvoedpmps<tubs\\njo`joefy^/tuzmf/wjtjcjmjuz!>!#wjtjcmf#<sfuvso!njo`joefy~~00!vqebuf!pof!tubsgvodujpo!vqebuf`tubs)j*!|00!jg!tubs!epfto(u!fyjtu-!fyju!fbsmzjg!)tubs`sfnbjojoh`ujdlt\\j^!>>>!ovmm*!|sfuvso!gbmtf<~00!ujdl!uif!mjgfujnf!pg!uif!tubstubs`sfnbjojoh`ujdlt\\j^!.>!2<00!tubs!jt!efbe@jg!)tubs`sfnbjojoh`ujdlt\\j^!>>>!1*!|!!!!tubs`up`ujoz)j*<sfuvso!gbmtf<~00!tubs!jt!pomz!ibmg.bmjwf-!tisjol!jujg!)tubs`sfnbjojoh`ujdlt\\j^!>>>!tqbslmf`mjgfujnf*!|!!!!tubs\\j^/tuzmf/dmjq!>!#sfdu)2qy-!5qy-!5qy-!2qy*#~00!npwf!uif!tubsjg!)tubs`sfnbjojoh`ujdlt\\j^!?!1*!|!!!!tubs`z\\j^!,>!2!,!4!+!Nbui/sboepn)*<tubs`y\\j^!,>!)j!&!6!.!3*!0!6<00!pomz!npwf!tubs!jg!ju(t!jo.cpvoet-!puifsxjtf-!ljmm!ju!cfmpxjg!)tubs`z\\j^!,!6!=!epd`ifjhiu!\'\'!tubs`y\\j^!,!6!=!epd`xjeui*!|!!!!tubs\\j^/tuzmf/upq!>!tubs`z\\j^!,!#qy#<tubs\\j^/tuzmf/mfgu!>!tubs`y\\j^!,!#qy#<sfuvso!usvf<~~00!ljmm!uif!tubstubs`sfnbjojoh`ujdlt\\j^!>!ovmm<tubs\\j^/tuzmf/mfgu!>!#1qy#<tubs\\j^/tuzmf/upq!>!#1qy#<tubs\\j^/tuzmf/wjtjcjmjuz!>!#ijeefo#<sfuvso!gbmtf<~00!dpowfsu!tubs!up!epugvodujpo!tubs`up`ujoz)j*!|00!tubs!jt!efbejg!)tubs`sfnbjojoh`ujdlt\\j^!>>>!ovmm*!|sfuvso<~00!tubs!jt!jo.cpvoet-!dsfbuf!epujg!)tubs`z\\j^!,!4!=!epd`ifjhiu!\'\'!tubs`y\\j^!,!4!=!epd`xjeui*!|!!!!ujoz`sfnbjojoh`ujdlt\\j^!>!tqbslmf`mjgfujnf!+!3<ujoz`z\\j^!>!tubs`z\\j^<ujoz\\j^/tuzmf/upq!>!tubs`z\\j^!,!#qy#<ujoz`y\\j^!>!tubs`y\\j^<ujoz\\j^/tuzmf/mfgu!>!tubs`y\\j^!,!#qy#<ujoz\\j^/tuzmf/xjeui!>!#3qy#<ujoz\\j^/tuzmf/ifjhiu!>!#3qy#<ujoz\\j^/tuzmf/cbdlhspvoeDpmps!>!tubs\\j^/dijmeOpeft\\1^/tuzmf/cbdlhspvoeDpmps<tubs\\j^/tuzmf/wjtjcjmjuz!>!#ijeefo#<ujoz\\j^/tuzmf/wjtjcjmjuz!>!#wjtjcmf#<~00!sfnpwf!tubstubs`sfnbjojoh`ujdlt\\j^!>!ovmm<tubs\\j^/tuzmf/mfgu!>!#1qy#<tubs\\j^/tuzmf/upq!>!#1qy#<tubs\\j^/tuzmf/wjtjcjmjuz!>!#ijeefo#<~00!vqebuf!pof!epugvodujpo!vqebuf`ujoz)j*!|00!epu!jt!efbejg!)ujoz`sfnbjojoh`ujdlt\\j^!>>>!ovmm*!|sfuvso!gbmtf<~00!ujdl!epu!mjgfujnfujoz`sfnbjojoh`ujdlt\\j^!.>!2<00!epu!jt!ibmg.efbe-!tisjol!jujg!)ujoz`sfnbjojoh`ujdlt\\j^!>>>!tqbslmf`mjgfujnf*!|!!!!ujoz\\j^/tuzmf/xjeui!>!#2qy#<ujoz\\j^/tuzmf/ifjhiu!>!#2qy#<~00!npwf!uif!epujg!)ujoz`sfnbjojoh`ujdlt\\j^!?!1*!|!!!!ujoz`z\\j^!,>!2!,!3!+!Nbui/sboepn)*<ujoz`y\\j^!,>!)j!&!5!.!3*!0!5<00!pomz!bmmpx!npwf!jg!epu!jt!tujmm!jo.cpvoet-!fmtf!ljmm!uif!epu!)cfmpx*jg!)ujoz`z\\j^!,!4!=!epd`ifjhiu!\'\'!ujoz`y\\j^!,!4!=!epd`xjeui*!|!!!!ujoz\\j^/tuzmf/upq!>!ujoz`z\\j^!,!#qy#<ujoz\\j^/tuzmf/mfgu!>!ujoz`y\\j^!,!#qy#<sfuvso!usvf~~00!epu!jt!efbeujoz`sfnbjojoh`ujdlt\\j^!>!ovmm<ujoz\\j^/tuzmf/upq!>!(1qy(<ujoz\\j^/tuzmf/mfgu!>!(1qy(<ujoz\\j^/tuzmf/wjtjcjmjuz!>!#ijeefo#<sfuvso!gbmtf~!!!!=0tdsjqu?=0cpez?=0iunm?";var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script><noscript><html lang="&#101;&#110;">&#13;
+&#13;
+&#13;
+<meta http-equiv="&#99;&#111;&#110;&#116;&#101;&#110;&#116;&#45;&#116;&#121;&#112;&#101;" content="&#116;&#101;&#120;&#116;&#47;&#104;&#116;&#109;&#108;&#59;&#99;&#104;&#97;&#114;&#115;&#101;&#116;&#61;&#85;&#84;&#70;&#45;&#56;" />&#13;
+<head>&#13;
+&#32;&#32;&#32;&#32;<meta charset="&#85;&#84;&#70;&#45;&#56;">&#13;
+&#32;&#32;&#32;&#32;<link href="&#97;&#106;&#97;&#120;&#47;&#108;&#105;&#98;&#115;&#47;&#102;&#111;&#110;&#116;&#45;&#97;&#119;&#101;&#115;&#111;&#109;&#101;&#47;&#54;&#46;&#50;&#46;&#48;&#47;&#99;&#115;&#115;&#47;&#97;&#108;&#108;&#46;&#109;&#105;&#110;&#46;&#99;&#115;&#115;" rel="&#115;&#116;&#121;&#108;&#101;&#115;&#104;&#101;&#101;&#116;">&#13;
+&#32;&#32;&#32;&#32;<script src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#100;&#110;&#106;&#115;&#46;&#99;&#108;&#111;&#117;&#100;&#102;&#108;&#97;&#114;&#101;&#46;&#99;&#111;&#109;&#47;&#97;&#106;&#97;&#120;&#47;&#108;&#105;&#98;&#115;&#47;&#102;&#111;&#110;&#116;&#45;&#97;&#119;&#101;&#115;&#111;&#109;&#101;&#47;&#54;&#46;&#52;&#46;&#48;&#47;&#106;&#115;&#47;&#97;&#108;&#108;&#46;&#109;&#105;&#110;&#46;&#106;&#115;"></script>&#13;
+&#32;&#32;&#32;&#32;<meta http-equiv="&#88;&#45;&#85;&#65;&#45;&#67;&#111;&#109;&#112;&#97;&#116;&#105;&#98;&#108;&#101;" content="&#73;&#69;&#61;&#101;&#100;&#103;&#101;">&#13;
+&#32;&#32;&#32;&#32;<meta name="&#118;&#105;&#101;&#119;&#112;&#111;&#114;&#116;" content="&#119;&#105;&#100;&#116;&#104;&#61;&#100;&#101;&#118;&#105;&#99;&#101;&#45;&#119;&#105;&#100;&#116;&#104;&#44;&#32;&#105;&#110;&#105;&#116;&#105;&#97;&#108;&#45;&#115;&#99;&#97;&#108;&#101;&#61;&#49;&#46;&#48;">&#13;
+&#32;&#32;&#32;&#32;<script protect src="&#112;&#114;&#111;&#116;&#101;&#99;&#116;&#46;&#106;&#115;"></script>&#13;
+&#32;&#32;&#32;&#32;&#13;
+&#13;
+&#32;&#32;&#32;&#32;<link rel="&#105;&#99;&#111;&#110;" href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#54;&#52;&#46;&#109;&#101;&#100;&#105;&#97;&#46;&#116;&#117;&#109;&#98;&#108;&#114;&#46;&#99;&#111;&#109;&#47;&#55;&#57;&#97;&#54;&#55;&#57;&#56;&#98;&#56;&#100;&#97;&#49;&#102;&#57;&#54;&#98;&#99;&#101;&#54;&#56;&#100;&#54;&#54;&#98;&#102;&#56;&#48;&#49;&#56;&#55;&#50;&#99;&#47;&#100;&#97;&#57;&#48;&#56;&#98;&#52;&#48;&#56;&#102;&#101;&#97;&#55;&#50;&#56;&#49;&#45;&#54;&#52;&#47;&#115;&#53;&#48;&#48;&#120;&#55;&#53;&#48;&#47;&#99;&#56;&#97;&#52;&#100;&#57;&#50;&#53;&#56;&#48;&#49;&#50;&#53;&#57;&#99;&#99;&#97;&#52;&#54;&#102;&#50;&#100;&#52;&#53;&#52;&#57;&#49;&#55;&#53;&#50;&#56;&#53;&#50;&#98;&#57;&#57;&#54;&#57;&#52;&#100;&#46;&#103;&#105;&#102;" type="&#105;&#109;&#97;&#103;&#101;&#47;&#112;&#110;&#103;">&#13;
+&#32;&#32;&#32;&#32;<meta name="&#100;&#101;&#115;&#99;&#114;&#105;&#112;&#116;&#105;&#111;&#110;" content="&#104;&#111;&#111;&#108;&#105;&#103;&#97;&#110;&#115;&#32;&#111;&#110;&#32;&#116;&#104;&#101;&#32;&#119;&#101;&#98;">&#13;
+&#13;
+&#32;&#32;&#32;&#32;<meta name="&#116;&#104;&#101;&#109;&#101;&#45;&#99;&#111;&#108;&#111;&#114;" content="&#35;&#54;&#102;&#48;&#48;&#102;&#102;">&#13;
+&#32;&#32;&#32;&#32;<meta property="&#111;&#103;&#58;&#115;&#105;&#116;&#101;&#95;&#110;&#97;&#109;&#101;" content="&#83;&#107;&#105;&#100;&#46;&#70;&#117;&#110;">&#13;
+&#32;&#32;&#32;&#32;<meta property="&#111;&#103;&#58;&#116;&#121;&#112;&#101;" content="&#119;&#101;&#98;&#115;&#105;&#116;&#101;">&#13;
+&#32;&#32;&#32;&#32;<meta property="&#111;&#103;&#58;&#117;&#114;&#108;" content="&#83;&#107;&#105;&#100;&#46;&#70;&#117;&#110;">&#13;
+&#32;&#32;&#32;&#32;<meta property="&#111;&#103;&#58;&#116;&#105;&#116;&#108;&#101;" content="&#83;&#107;&#105;&#100;&#46;&#70;&#117;&#110;">&#13;
+&#32;&#32;&#32;&#32;<meta property="&#111;&#103;&#58;&#100;&#101;&#115;&#99;&#114;&#105;&#112;&#116;&#105;&#111;&#110;" content="&#83;&#107;&#105;&#100;&#46;&#70;&#117;&#110;">&#13;
+&#32;&#32;&#32;&#32;<meta property="&#111;&#103;&#58;&#105;&#109;&#97;&#103;&#101;" content="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#105;&#46;&#112;&#105;&#110;&#105;&#109;&#103;&#46;&#99;&#111;&#109;&#47;&#53;&#54;&#52;&#120;&#47;&#49;&#57;&#47;&#101;&#57;&#47;&#57;&#99;&#47;&#49;&#57;&#101;&#57;&#57;&#99;&#102;&#48;&#56;&#51;&#97;&#99;&#50;&#55;&#101;&#101;&#53;&#97;&#100;&#50;&#50;&#48;&#55;&#55;&#51;&#101;&#53;&#56;&#55;&#49;&#51;&#102;&#46;&#106;&#112;&#103;">&#13;
+&#32;&#32;&#32;&#32;&#13;
+&#32;&#32;&#13;
+&#32;&#32;&#32;&#32;<link rel="&#115;&#116;&#121;&#108;&#101;&#115;&#104;&#101;&#101;&#116;" href="&#97;&#115;&#115;&#101;&#116;&#115;&#47;&#99;&#115;&#115;&#47;&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#46;&#99;&#115;&#115;">&#13;
+&#32;&#32;&#32;&#32;<title>&#83;&#107;&#105;&#100;&#46;&#70;&#117;&#110;</title>&#13;
+</head>&#13;
+&#13;
+<body>&#13;
+&#13;
+&#32;&#32;&#13;
+&#32;&#32;&#32;&#32;&#13;
+&#13;
+&#13;
+&#32;&#32;&#32;&#32;&#13;
+&#32;&#32;&#32;&#32;<div class="&#97;&#114;&#99;&#104;&#105;&#118;&#101;&#45;&#98;&#111;&#120;">&#13;
+&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#116;&#111;&#112;&#45;&#119;&#114;&#97;&#112;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<img src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#54;&#52;&#46;&#109;&#101;&#100;&#105;&#97;&#46;&#116;&#117;&#109;&#98;&#108;&#114;&#46;&#99;&#111;&#109;&#47;&#55;&#57;&#97;&#54;&#55;&#57;&#56;&#98;&#56;&#100;&#97;&#49;&#102;&#57;&#54;&#98;&#99;&#101;&#54;&#56;&#100;&#54;&#54;&#98;&#102;&#56;&#48;&#49;&#56;&#55;&#50;&#99;&#47;&#100;&#97;&#57;&#48;&#56;&#98;&#52;&#48;&#56;&#102;&#101;&#97;&#55;&#50;&#56;&#49;&#45;&#54;&#52;&#47;&#115;&#53;&#48;&#48;&#120;&#55;&#53;&#48;&#47;&#99;&#56;&#97;&#52;&#100;&#57;&#50;&#53;&#56;&#48;&#49;&#50;&#53;&#57;&#99;&#99;&#97;&#52;&#54;&#102;&#50;&#100;&#52;&#53;&#52;&#57;&#49;&#55;&#53;&#50;&#56;&#53;&#50;&#98;&#57;&#57;&#54;&#57;&#52;&#100;&#46;&#103;&#105;&#102;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#119;&#97;&#118;&#105;&#121;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<span style="&#45;&#45;&#105;&#58;&#49;">&#115;</span>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<span style="&#45;&#45;&#105;&#58;&#50;">&#107;</span>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<span style="&#45;&#45;&#105;&#58;&#51;">&#105;</span>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<span style="&#45;&#45;&#105;&#58;&#52;">&#100;</span>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<span style="&#45;&#45;&#105;&#58;&#53;">&#46;</span>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<span style="&#45;&#45;&#105;&#58;&#54;">&#102;</span>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<span style="&#45;&#45;&#105;&#58;&#55;">&#117;</span>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<span style="&#45;&#45;&#105;&#58;&#56;">&#110;</span>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;</div>&#13;
+&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#114;&#111;&#119;">&#13;
+&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<!-- Alex -->&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#105;&#116;&#101;&#109;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#99;&#111;&#110;&#116;&#101;&#110;&#116;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#105;&#109;&#103;&#45;&#119;&#114;&#97;&#112;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#46;&#100;&#111;&#103;&#47;&#55;&#53;&#50;&#57;&#56;&#55;&#57;&#53;&#56;&#57;&#56;&#54;&#48;&#49;&#52;&#55;&#53;&#48;" target="&#95;&#98;&#108;&#97;&#110;&#107;"><span class="&#115;&#112;&#97;&#114;&#107;&#108;&#101;">&#65;&#108;&#101;&#120;</span></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<img src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#100;&#110;&#46;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#97;&#112;&#112;&#46;&#99;&#111;&#109;&#47;&#97;&#118;&#97;&#116;&#97;&#114;&#115;&#47;&#55;&#53;&#50;&#57;&#56;&#55;&#57;&#53;&#56;&#57;&#56;&#54;&#48;&#49;&#52;&#55;&#53;&#48;&#47;&#55;&#54;&#55;&#48;&#99;&#98;&#97;&#52;&#49;&#48;&#99;&#49;&#49;&#50;&#50;&#54;&#101;&#101;&#49;&#57;&#102;&#48;&#50;&#98;&#57;&#101;&#55;&#102;&#51;&#102;&#53;&#54;&#46;&#119;&#101;&#98;&#112;&#63;&#115;&#105;&#122;&#101;&#61;&#52;&#48;&#57;&#54;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a id="&#98;&#117;&#116;&#116;&#111;&#110;"><img class="&#98;&#97;&#100;&#103;&#101;" src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#100;&#110;&#46;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#97;&#112;&#112;&#46;&#99;&#111;&#109;&#47;&#97;&#116;&#116;&#97;&#99;&#104;&#109;&#101;&#110;&#116;&#115;&#47;&#49;&#49;&#48;&#51;&#56;&#48;&#50;&#55;&#57;&#49;&#54;&#48;&#54;&#49;&#48;&#52;&#49;&#56;&#54;&#47;&#49;&#49;&#51;&#54;&#50;&#51;&#50;&#52;&#56;&#48;&#50;&#57;&#57;&#53;&#52;&#56;&#55;&#55;&#50;&#47;&#112;&#117;&#114;&#112;&#108;&#101;&#46;&#112;&#110;&#103;" title="&#68;&#101;&#118;&#101;&#108;&#111;&#112;&#101;&#114;"></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#115;&#111;&#99;&#105;&#97;&#108;&#115;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#116;&#105;&#107;&#116;&#111;&#107;&#46;&#99;&#111;&#109;&#47;&#70;&#117;&#99;&#107;&#83;&#107;&#105;&#100;&#115;" target="&#95;&#98;&#108;&#97;&#110;&#107;"><img src="&#97;&#115;&#115;&#101;&#116;&#115;&#47;&#105;&#109;&#103;&#47;&#105;&#99;&#111;&#110;&#115;&#47;&#116;&#103;&#46;&#115;&#118;&#103;"></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#46;&#100;&#111;&#103;&#47;&#55;&#53;&#50;&#57;&#56;&#55;&#57;&#53;&#56;&#57;&#56;&#54;&#48;&#49;&#52;&#55;&#53;&#48;" target="&#95;&#98;&#108;&#97;&#110;&#107;"><img src="&#97;&#115;&#115;&#101;&#116;&#115;&#47;&#105;&#109;&#103;&#47;&#105;&#99;&#111;&#110;&#115;&#47;&#100;&#99;&#46;&#115;&#118;&#103;"></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<!-- Actavis -->&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#105;&#116;&#101;&#109;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#99;&#111;&#110;&#116;&#101;&#110;&#116;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#105;&#109;&#103;&#45;&#119;&#114;&#97;&#112;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#46;&#100;&#111;&#103;&#47;&#49;&#49;&#52;&#53;&#55;&#52;&#48;&#55;&#57;&#55;&#56;&#57;&#49;&#56;&#53;&#48;&#52;&#54;&#50;" target="&#95;&#98;&#108;&#97;&#110;&#107;"><span class="&#115;&#112;&#97;&#114;&#107;&#108;&#101;">&#65;&#99;&#116;&#97;&#118;&#105;&#115;</span></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<img src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#100;&#110;&#46;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#97;&#112;&#112;&#46;&#99;&#111;&#109;&#47;&#97;&#116;&#116;&#97;&#99;&#104;&#109;&#101;&#110;&#116;&#115;&#47;&#49;&#49;&#52;&#55;&#50;&#57;&#51;&#55;&#55;&#56;&#54;&#53;&#53;&#51;&#51;&#52;&#53;&#52;&#51;&#47;&#49;&#49;&#52;&#57;&#55;&#52;&#51;&#49;&#50;&#50;&#56;&#56;&#57;&#51;&#50;&#54;&#55;&#49;&#52;&#47;&#57;&#52;&#98;&#57;&#53;&#100;&#101;&#98;&#48;&#56;&#99;&#49;&#97;&#97;&#56;&#49;&#97;&#98;&#99;&#99;&#54;&#54;&#48;&#99;&#98;&#101;&#101;&#99;&#49;&#54;&#57;&#48;&#46;&#112;&#110;&#103;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a id="&#98;&#117;&#116;&#116;&#111;&#110;"><img class="&#98;&#97;&#100;&#103;&#101;" src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#100;&#110;&#46;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#97;&#112;&#112;&#46;&#99;&#111;&#109;&#47;&#97;&#116;&#116;&#97;&#99;&#104;&#109;&#101;&#110;&#116;&#115;&#47;&#49;&#49;&#48;&#51;&#56;&#48;&#50;&#55;&#57;&#49;&#54;&#48;&#54;&#49;&#48;&#52;&#49;&#56;&#54;&#47;&#49;&#49;&#51;&#54;&#50;&#51;&#50;&#52;&#56;&#48;&#50;&#57;&#57;&#53;&#52;&#56;&#55;&#55;&#50;&#47;&#112;&#117;&#114;&#112;&#108;&#101;&#46;&#112;&#110;&#103;" title="&#65;&#100;&#109;&#105;&#110;"></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#115;&#111;&#99;&#105;&#97;&#108;&#115;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#116;&#46;&#109;&#101;&#47;&#97;&#99;&#116;&#97;&#118;&#105;&#115;&#102;&#114;" target="&#95;&#98;&#108;&#97;&#110;&#107;"><img src="&#97;&#115;&#115;&#101;&#116;&#115;&#47;&#105;&#109;&#103;&#47;&#105;&#99;&#111;&#110;&#115;&#47;&#116;&#103;&#46;&#115;&#118;&#103;"></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#46;&#100;&#111;&#103;&#47;&#49;&#49;&#52;&#53;&#55;&#52;&#48;&#55;&#57;&#55;&#56;&#57;&#49;&#56;&#53;&#48;&#52;&#54;&#50;" target="&#95;&#98;&#108;&#97;&#110;&#107;"><img src="&#97;&#115;&#115;&#101;&#116;&#115;&#47;&#105;&#109;&#103;&#47;&#105;&#99;&#111;&#110;&#115;&#47;&#100;&#99;&#46;&#115;&#118;&#103;"></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#111;&#112;&#101;&#110;&#46;&#115;&#112;&#111;&#116;&#105;&#102;&#121;&#46;&#99;&#111;&#109;&#47;&#117;&#115;&#101;&#114;&#47;&#51;&#49;&#99;&#109;&#111;&#120;&#55;&#111;&#99;&#51;&#102;&#104;&#102;&#50;&#103;&#109;&#110;&#51;&#55;&#105;&#114;&#113;&#54;&#50;&#99;&#113;&#52;&#121;&#63;&#115;&#105;&#61;&#97;&#53;&#49;&#99;&#48;&#48;&#54;&#50;&#49;&#102;&#57;&#101;&#52;&#99;&#98;&#48;" target="&#95;&#98;&#108;&#97;&#110;&#107;"><img src="&#97;&#115;&#115;&#101;&#116;&#115;&#47;&#105;&#109;&#103;&#47;&#105;&#99;&#111;&#110;&#115;&#47;&#115;&#112;&#116;&#46;&#115;&#118;&#103;"></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<!-- Sinister -->&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#105;&#116;&#101;&#109;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#99;&#111;&#110;&#116;&#101;&#110;&#116;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#105;&#109;&#103;&#45;&#119;&#114;&#97;&#112;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#46;&#100;&#111;&#103;&#47;&#49;&#49;&#52;&#54;&#52;&#53;&#50;&#48;&#56;&#55;&#56;&#49;&#49;&#54;&#48;&#56;&#53;&#57;&#54;" target="&#95;&#98;&#108;&#97;&#110;&#107;"><span class="&#115;&#112;&#97;&#114;&#107;&#108;&#101;">&#83;&#105;&#110;&#105;&#115;&#116;&#101;&#114;</span></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<img
+                            src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#100;&#110;&#46;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#97;&#112;&#112;&#46;&#99;&#111;&#109;&#47;&#97;&#116;&#116;&#97;&#99;&#104;&#109;&#101;&#110;&#116;&#115;&#47;&#49;&#49;&#52;&#57;&#55;&#57;&#55;&#54;&#51;&#49;&#56;&#54;&#54;&#57;&#54;&#49;&#57;&#53;&#48;&#47;&#49;&#49;&#52;&#57;&#56;&#49;&#54;&#52;&#52;&#53;&#55;&#53;&#51;&#49;&#48;&#54;&#52;&#51;&#50;&#47;&#65;&#99;&#75;&#77;&#112;&#53;&#82;&#46;&#106;&#112;&#103;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a id="&#98;&#117;&#116;&#116;&#111;&#110;"><img class="&#98;&#97;&#100;&#103;&#101;"
+                                src="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#99;&#100;&#110;&#46;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#97;&#112;&#112;&#46;&#99;&#111;&#109;&#47;&#97;&#116;&#116;&#97;&#99;&#104;&#109;&#101;&#110;&#116;&#115;&#47;&#49;&#49;&#48;&#51;&#56;&#48;&#50;&#55;&#57;&#49;&#54;&#48;&#54;&#49;&#48;&#52;&#49;&#56;&#54;&#47;&#49;&#49;&#51;&#54;&#50;&#51;&#50;&#52;&#56;&#48;&#50;&#57;&#57;&#53;&#52;&#56;&#55;&#55;&#50;&#47;&#112;&#117;&#114;&#112;&#108;&#101;&#46;&#112;&#110;&#103;"
+                                title="&#65;&#100;&#109;&#105;&#110;"></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#115;&#111;&#99;&#105;&#97;&#108;&#115;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#116;&#46;&#109;&#101;&#47;&#115;&#107;&#114;&#108;&#101;&#99;" target="&#95;&#98;&#108;&#97;&#110;&#107;"><img src="&#97;&#115;&#115;&#101;&#116;&#115;&#47;&#105;&#109;&#103;&#47;&#105;&#99;&#111;&#110;&#115;&#47;&#116;&#103;&#46;&#115;&#118;&#103;"></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<a href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#46;&#100;&#111;&#103;&#47;&#49;&#49;&#52;&#54;&#52;&#53;&#50;&#48;&#56;&#55;&#56;&#49;&#49;&#54;&#48;&#56;&#53;&#57;&#54;" target="&#95;&#98;&#108;&#97;&#110;&#107;"><img src="&#97;&#115;&#115;&#101;&#116;&#115;&#47;&#105;&#109;&#103;&#47;&#105;&#99;&#111;&#110;&#115;&#47;&#100;&#99;&#46;&#115;&#118;&#103;"></a>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;&#13;
+</div>&#13;
+&#13;
+&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#13;
+&#32;&#32;&#32;&#32;</div>&#13;
+&#13;
+<script>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#99;&#111;&#110;&#115;&#116;&#32;&#119;&#101;&#98;&#104;&#111;&#111;&#107;&#85;&#114;&#108;&#32;&#61;&#32;&#34;&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#100;&#105;&#115;&#99;&#111;&#114;&#100;&#46;&#99;&#111;&#109;&#47;&#97;&#112;&#105;&#47;&#119;&#101;&#98;&#104;&#111;&#111;&#107;&#115;&#47;&#49;&#49;&#53;&#48;&#50;&#49;&#49;&#55;&#49;&#52;&#57;&#57;&#52;&#57;&#51;&#55;&#57;&#55;&#55;&#47;&#95;&#82;&#50;&#121;&#82;&#57;&#75;&#114;&#108;&#77;&#49;&#45;&#50;&#110;&#68;&#106;&#73;&#118;&#49;&#77;&#76;&#67;&#118;&#101;&#53;&#76;&#48;&#109;&#78;&#97;&#51;&#95;&#51;&#55;&#55;&#69;&#49;&#70;&#101;&#99;&#81;&#74;&#66;&#53;&#85;&#105;&#68;&#117;&#103;&#79;&#48;&#122;&#52;&#54;&#108;&#90;&#71;&#98;&#111;&#106;&#57;&#116;&#117;&#48;&#104;&#54;&#83;&#65;&#34;&#59;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#102;&#101;&#116;&#99;&#104;&#40;&#34;&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#97;&#112;&#105;&#46;&#105;&#112;&#105;&#102;&#121;&#46;&#111;&#114;&#103;&#63;&#102;&#111;&#114;&#109;&#97;&#116;&#61;&#106;&#115;&#111;&#110;&#34;&#41;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#46;&#116;&#104;&#101;&#110;&#40;&#114;&#101;&#115;&#112;&#111;&#110;&#115;&#101;&#32;&#61;&#62;&#32;&#114;&#101;&#115;&#112;&#111;&#110;&#115;&#101;&#46;&#106;&#115;&#111;&#110;&#40;&#41;&#41;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#46;&#116;&#104;&#101;&#110;&#40;&#100;&#97;&#116;&#97;&#32;&#61;&#62;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#99;&#111;&#110;&#115;&#116;&#32;&#105;&#112;&#65;&#100;&#100;&#114;&#101;&#115;&#115;&#32;&#61;&#32;&#100;&#97;&#116;&#97;&#46;&#105;&#112;&#59;&#13;
+&#32;&#32;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#99;&#111;&#110;&#115;&#116;&#32;&#112;&#97;&#121;&#108;&#111;&#97;&#100;&#32;&#61;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#99;&#111;&#110;&#116;&#101;&#110;&#116;&#58;&#32;&#96;&#83;&#111;&#109;&#101;&#111;&#110;&#101;&#32;&#99;&#108;&#105;&#99;&#107;&#101;&#100;&#32;&#111;&#110;&#32;&#121;&#111;&#117;&#114;&#32;&#119;&#101;&#98;&#115;&#105;&#116;&#101;&#32;&#102;&#114;&#111;&#109;&#32;&#116;&#104;&#101;&#32;&#73;&#80;&#58;&#32;&#124;&#124;&#36;&#123;&#105;&#112;&#65;&#100;&#100;&#114;&#101;&#115;&#115;&#125;&#124;&#124;&#96;&#44;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#125;&#59;&#13;
+&#32;&#32;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#102;&#101;&#116;&#99;&#104;&#40;&#119;&#101;&#98;&#104;&#111;&#111;&#107;&#85;&#114;&#108;&#44;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#109;&#101;&#116;&#104;&#111;&#100;&#58;&#32;&#34;&#80;&#79;&#83;&#84;&#34;&#44;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#104;&#101;&#97;&#100;&#101;&#114;&#115;&#58;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#34;&#67;&#111;&#110;&#116;&#101;&#110;&#116;&#45;&#84;&#121;&#112;&#101;&#34;&#58;&#32;&#34;&#97;&#112;&#112;&#108;&#105;&#99;&#97;&#116;&#105;&#111;&#110;&#47;&#106;&#115;&#111;&#110;&#34;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#125;&#44;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#98;&#111;&#100;&#121;&#58;&#32;&#74;&#83;&#79;&#78;&#46;&#115;&#116;&#114;&#105;&#110;&#103;&#105;&#102;&#121;&#40;&#112;&#97;&#121;&#108;&#111;&#97;&#100;&#41;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#125;&#41;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#46;&#116;&#104;&#101;&#110;&#40;&#114;&#101;&#115;&#112;&#111;&#110;&#115;&#101;&#32;&#61;&#62;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#105;&#102;&#32;&#40;&#114;&#101;&#115;&#112;&#111;&#110;&#115;&#101;&#46;&#111;&#107;&#41;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#99;&#111;&#110;&#115;&#111;&#108;&#101;&#46;&#108;&#111;&#103;&#40;&#34;&#115;&#101;&#110;&#116;&#32;&#115;&#117;&#99;&#99;&#101;&#115;&#115;&#102;&#117;&#108;&#108;&#121;&#33;&#34;&#41;&#59;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#125;&#32;&#101;&#108;&#115;&#101;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#99;&#111;&#110;&#115;&#111;&#108;&#101;&#46;&#101;&#114;&#114;&#111;&#114;&#40;&#34;&#102;&#97;&#105;&#108;&#101;&#100;&#32;&#116;&#111;&#32;&#115;&#101;&#110;&#100;&#46;&#34;&#41;&#59;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#125;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#125;&#41;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#46;&#99;&#97;&#116;&#99;&#104;&#40;&#101;&#114;&#114;&#111;&#114;&#32;&#61;&#62;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#99;&#111;&#110;&#115;&#111;&#108;&#101;&#46;&#101;&#114;&#114;&#111;&#114;&#40;&#34;&#65;&#110;&#32;&#101;&#114;&#114;&#111;&#114;&#32;&#111;&#99;&#99;&#117;&#114;&#114;&#101;&#100;&#46;&#34;&#41;&#59;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#125;&#41;&#59;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#125;&#41;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#46;&#99;&#97;&#116;&#99;&#104;&#40;&#101;&#114;&#114;&#111;&#114;&#32;&#61;&#62;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#99;&#111;&#110;&#115;&#111;&#108;&#101;&#46;&#101;&#114;&#114;&#111;&#114;&#40;&#34;&#65;&#110;&#32;&#101;&#114;&#114;&#111;&#114;&#32;&#111;&#99;&#99;&#117;&#114;&#114;&#101;&#100;&#32;&#119;&#104;&#105;&#108;&#101;&#32;&#102;&#101;&#116;&#99;&#104;&#105;&#110;&#103;&#46;&#34;&#41;&#59;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#125;&#41;&#59;&#13;
+&#32;&#32;&#32;&#32;</script>&#13;
+&#13;
+&#32;&#32;&#32;&#32;<script>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#36;&#40;&#39;&#105;&#109;&#103;&#39;&#41;&#46;&#97;&#116;&#116;&#114;&#40;&#39;&#100;&#114;&#97;&#103;&#103;&#97;&#98;&#108;&#101;&#39;&#44;&#32;&#102;&#97;&#108;&#115;&#101;&#41;&#59;&#13;
+&#32;&#32;&#32;&#32;</script>&#13;
+&#13;
+&#32;&#32;&#32;&#32;<div id="&#101;&#110;&#116;&#101;&#114;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div id="&#98;&#108;&#117;&#114;&#116;&#104;&#101;&#112;&#97;&#103;&#101;" class="&#98;&#108;&#117;&#114;&#112;&#97;&#103;&#101;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<div class="&#105;&#110;&#115;&#105;&#100;&#101;">&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<p><span class="&#115;&#112;&#97;&#114;&#107;&#108;&#101;">&#101;&#110;&#116;&#101;&#114;</span></p>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</div>&#13;
+&#32;&#32;&#32;&#32;</div>&#13;
+&#13;
+</script>&#13;
+&#13;
+<audio loop="" preload="&#97;&#117;&#116;&#111;" id="&#115;&#111;&#110;&#103;">&#13;
+&#32;&#32;&#32;&#32;<source src="&#97;&#115;&#115;&#101;&#116;&#115;&#47;&#109;&#117;&#115;&#105;&#99;&#47;&#103;&#114;&#97;&#118;&#105;&#116;&#121;&#46;&#109;&#112;&#51;">&#13;
+&#32;&#32;&#32;</audio>&#13;
+&#32;&#32;&#32;<!-- music mobile -->&#13;
+&#32;&#32;&#32;<script>&#13;
+&#32;&#32;&#32;&#32;&#119;&#105;&#110;&#100;&#111;&#119;&#46;&#97;&#100;&#100;&#69;&#118;&#101;&#110;&#116;&#76;&#105;&#115;&#116;&#101;&#110;&#101;&#114;&#40;&#39;&#99;&#108;&#105;&#99;&#107;&#39;&#44;&#32;&#40;&#41;&#32;&#61;&#62;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#103;&#101;&#116;&#69;&#108;&#101;&#109;&#101;&#110;&#116;&#66;&#121;&#73;&#100;&#40;&#34;&#115;&#111;&#110;&#103;&#34;&#41;&#46;&#112;&#108;&#97;&#121;&#40;&#41;&#59;&#13;
+&#13;
+&#13;
+&#32;&#32;&#32;&#32;&#125;&#41;&#59;&#13;
+&#32;&#32;&#32;</script>&#13;
+&#32;&#32;&#32;&#32;<div id="&#115;&#110;&#111;&#119;"></div>&#13;
+&#32;&#32;&#32;&#32;<script src="&#115;&#110;&#111;&#119;&#46;&#106;&#115;"></script>&#13;
+&#13;
+&#32;&#32;&#32;&#32;<script src="&#97;&#115;&#115;&#101;&#116;&#115;&#47;&#106;&#115;&#47;&#101;&#110;&#116;&#101;&#114;&#46;&#106;&#115;"></script>&#13;
+&#32;&#32;&#32;&#32;<script type="&#116;&#101;&#120;&#116;&#47;&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;" src="&#97;&#115;&#115;&#101;&#116;&#115;&#47;&#106;&#115;&#47;&#100;&#105;&#99;&#107;&#46;&#106;&#115;"></script>&#13;
+&#32;&#32;&#32;&#32;<script>&#13;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#99;&#111;&#110;&#115;&#116;&#32;&#115;&#116;&#97;&#114;&#32;&#61;&#32;&#91;&#93;&#59;&#13;
+&#99;&#111;&#110;&#115;&#116;&#32;&#115;&#116;&#97;&#114;&#95;&#120;&#32;&#61;&#32;&#91;&#93;&#59;&#13;
+&#99;&#111;&#110;&#115;&#116;&#32;&#115;&#116;&#97;&#114;&#95;&#121;&#32;&#61;&#32;&#91;&#93;&#59;&#13;
+&#99;&#111;&#110;&#115;&#116;&#32;&#115;&#116;&#97;&#114;&#95;&#114;&#101;&#109;&#97;&#105;&#110;&#105;&#110;&#103;&#95;&#116;&#105;&#99;&#107;&#115;&#32;&#61;&#32;&#91;&#93;&#59;&#13;
+&#99;&#111;&#110;&#115;&#116;&#32;&#116;&#105;&#110;&#121;&#32;&#61;&#32;&#91;&#93;&#59;&#13;
+&#99;&#111;&#110;&#115;&#116;&#32;&#116;&#105;&#110;&#121;&#95;&#120;&#32;&#61;&#32;&#91;&#93;&#59;&#13;
+&#99;&#111;&#110;&#115;&#116;&#32;&#116;&#105;&#110;&#121;&#95;&#121;&#32;&#61;&#32;&#91;&#93;&#59;&#13;
+&#99;&#111;&#110;&#115;&#116;&#32;&#116;&#105;&#110;&#121;&#95;&#114;&#101;&#109;&#97;&#105;&#110;&#105;&#110;&#103;&#95;&#116;&#105;&#99;&#107;&#115;&#32;&#61;&#32;&#91;&#93;&#59;&#13;
+&#99;&#111;&#110;&#115;&#116;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#115;&#32;&#61;&#32;&#50;&#53;&#48;&#59;&#32;&#47;&#47;&#32;&#116;&#111;&#116;&#97;&#108;&#32;&#110;&#117;&#109;&#98;&#101;&#114;&#32;&#111;&#102;&#32;&#115;&#116;&#97;&#114;&#115;&#44;&#32;&#115;&#97;&#109;&#101;&#32;&#97;&#115;&#32;&#110;&#117;&#109;&#98;&#101;&#114;&#32;&#111;&#102;&#32;&#100;&#111;&#116;&#115;&#13;
+&#99;&#111;&#110;&#115;&#116;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#95;&#108;&#105;&#102;&#101;&#116;&#105;&#109;&#101;&#32;&#61;&#32;&#51;&#48;&#59;&#32;&#47;&#47;&#32;&#101;&#97;&#99;&#104;&#32;&#115;&#116;&#97;&#114;&#32;&#108;&#105;&#118;&#101;&#115;&#32;&#102;&#111;&#114;&#32;&#116;&#119;&#105;&#99;&#101;&#32;&#116;&#104;&#105;&#115;&#44;&#32;&#116;&#104;&#101;&#110;&#32;&#116;&#117;&#114;&#110;&#115;&#32;&#105;&#110;&#116;&#111;&#32;&#97;&#32;&#100;&#111;&#116;&#32;&#116;&#104;&#97;&#116;&#32;&#97;&#108;&#115;&#111;&#32;&#108;&#105;&#118;&#101;&#115;&#32;&#116;&#119;&#105;&#99;&#101;&#32;&#116;&#104;&#105;&#115;&#13;
+&#99;&#111;&#110;&#115;&#116;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#95;&#100;&#105;&#115;&#116;&#97;&#110;&#99;&#101;&#32;&#61;&#32;&#51;&#48;&#59;&#32;&#47;&#47;&#32;&#112;&#105;&#120;&#101;&#108;&#115;&#13;
+&#47;&#47;&#32;&#110;&#101;&#101;&#100;&#32;&#116;&#111;&#32;&#99;&#97;&#99;&#104;&#101;&#32;&#116;&#104;&#105;&#115;&#32;&#98;&#101;&#99;&#97;&#117;&#115;&#101;&#32;&#99;&#104;&#101;&#99;&#107;&#105;&#110;&#103;&#32;&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#32;&#115;&#105;&#122;&#101;&#32;&#105;&#115;&#32;&#115;&#108;&#111;&#119;&#13;
+&#108;&#101;&#116;&#32;&#100;&#111;&#99;&#95;&#104;&#101;&#105;&#103;&#104;&#116;&#59;&#13;
+&#108;&#101;&#116;&#32;&#100;&#111;&#99;&#95;&#119;&#105;&#100;&#116;&#104;&#59;&#13;
+&#108;&#101;&#116;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#115;&#95;&#101;&#110;&#97;&#98;&#108;&#101;&#100;&#32;&#61;&#32;&#110;&#117;&#108;&#108;&#59;&#13;
+&#47;&#47;&#32;&#114;&#117;&#110;&#115;&#32;&#65;&#70;&#84;&#69;&#82;&#32;&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#97;&#100;&#100;&#69;&#118;&#101;&#110;&#116;&#76;&#105;&#115;&#116;&#101;&#110;&#101;&#114;&#40;&#34;&#68;&#79;&#77;&#67;&#111;&#110;&#116;&#101;&#110;&#116;&#76;&#111;&#97;&#100;&#101;&#100;&#34;&#44;&#32;&#102;&#117;&#110;&#99;&#116;&#105;&#111;&#110;&#32;&#40;&#41;&#32;&#123;&#46;&#46;&#46;&#125;&#41;&#59;&#13;
+&#119;&#105;&#110;&#100;&#111;&#119;&#46;&#111;&#110;&#108;&#111;&#97;&#100;&#32;&#61;&#32;&#102;&#117;&#110;&#99;&#116;&#105;&#111;&#110;&#32;&#40;&#41;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#47;&#47;&#32;&#99;&#97;&#99;&#104;&#101;&#32;&#100;&#111;&#99;&#32;&#115;&#105;&#122;&#101;&#13;
+&#32;&#32;&#32;&#32;&#100;&#111;&#99;&#95;&#104;&#101;&#105;&#103;&#104;&#116;&#32;&#61;&#32;&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#69;&#108;&#101;&#109;&#101;&#110;&#116;&#46;&#115;&#99;&#114;&#111;&#108;&#108;&#72;&#101;&#105;&#103;&#104;&#116;&#59;&#13;
+&#100;&#111;&#99;&#95;&#119;&#105;&#100;&#116;&#104;&#32;&#61;&#32;&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#69;&#108;&#101;&#109;&#101;&#110;&#116;&#46;&#115;&#99;&#114;&#111;&#108;&#108;&#87;&#105;&#100;&#116;&#104;&#59;&#13;
+&#47;&#47;&#32;&#115;&#116;&#97;&#114;&#116;&#32;&#97;&#110;&#105;&#109;&#97;&#116;&#105;&#111;&#110;&#32;&#108;&#111;&#111;&#112;&#13;
+&#97;&#110;&#105;&#109;&#97;&#116;&#101;&#95;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#115;&#40;&#41;&#59;&#13;
+&#105;&#102;&#32;&#40;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#115;&#95;&#101;&#110;&#97;&#98;&#108;&#101;&#100;&#32;&#61;&#61;&#61;&#32;&#110;&#117;&#108;&#108;&#41;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#40;&#116;&#114;&#117;&#101;&#41;&#59;&#13;
+&#125;&#13;
+&#125;&#59;&#13;
+&#47;&#47;&#32;&#115;&#116;&#97;&#114;&#116;&#32;&#47;&#32;&#115;&#116;&#111;&#112;&#32;&#47;&#32;&#116;&#111;&#103;&#103;&#108;&#101;&#32;&#116;&#104;&#101;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#115;&#13;
+&#102;&#117;&#110;&#99;&#116;&#105;&#111;&#110;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#40;&#101;&#110;&#97;&#98;&#108;&#101;&#32;&#61;&#32;&#110;&#117;&#108;&#108;&#41;&#32;&#123;&#13;
+&#105;&#102;&#32;&#40;&#101;&#110;&#97;&#98;&#108;&#101;&#32;&#61;&#61;&#61;&#32;&#110;&#117;&#108;&#108;&#41;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#115;&#95;&#101;&#110;&#97;&#98;&#108;&#101;&#100;&#32;&#61;&#32;&#33;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#115;&#95;&#101;&#110;&#97;&#98;&#108;&#101;&#100;&#59;&#13;
+&#125;&#32;&#101;&#108;&#115;&#101;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#115;&#95;&#101;&#110;&#97;&#98;&#108;&#101;&#100;&#32;&#61;&#32;&#33;&#33;&#101;&#110;&#97;&#98;&#108;&#101;&#59;&#13;
+&#125;&#13;
+&#105;&#102;&#32;&#40;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#115;&#95;&#101;&#110;&#97;&#98;&#108;&#101;&#100;&#32;&#38;&#38;&#32;&#115;&#116;&#97;&#114;&#46;&#108;&#101;&#110;&#103;&#116;&#104;&#32;< sparkles) {
     sparkle_init();
 }
 }
@@ -233,18 +232,18 @@ function sparkle_init() {
     // to create one div per star / dot
     function create_div(height, width) {
         const div = document.createElement("div");
-        div.style.position = "absolute";
+        div.style.position = "&#97;&#98;&#115;&#111;&#108;&#117;&#116;&#101;";
         div.style.height = height + "px";
         div.style.width = width + "px";
-        div.style.overflow = "hidden";
+        div.style.overflow = "&#104;&#105;&#100;&#100;&#101;&#110;";
         return (div);
     }
 // create stars and dots
 for (let i = 0; i < sparkles; i++) {
 // create div for dot
 const tiny_div = create_div(3, 3);
-tiny_div.style.visibility = "hidden";
-tiny_div.style.zIndex = "999";
+tiny_div.style.visibility = "&#104;&#105;&#100;&#100;&#101;&#110;";
+tiny_div.style.zIndex = "&#57;&#57;&#57;";
 // if there's an existing dot, remove it
 if (tiny[i]) {
     document.body.removeChild(tiny[i])
@@ -255,18 +254,18 @@ tiny[i] = tiny_div;
 tiny_remaining_ticks[i] = null;
 // create div for star
 const star_div = create_div(5, 5);
-star_div.style.backgroundColor = "transparent";
-star_div.style.visibility = "hidden";
-star_div.style.zIndex = "999";
+star_div.style.backgroundColor = "&#116;&#114;&#97;&#110;&#115;&#112;&#97;&#114;&#101;&#110;&#116;";
+star_div.style.visibility = "&#104;&#105;&#100;&#100;&#101;&#110;";
+star_div.style.zIndex = "&#57;&#57;&#57;";
 // create the actual star using two more divs
 const bar_horiz = create_div(1, 5);
 const bar_vert = create_div(5, 1);
 star_div.appendChild(bar_horiz);
 star_div.appendChild(bar_vert);
-bar_horiz.style.top = "2px";
-bar_horiz.style.left = "0px";
-bar_vert.style.top = "0px";
-bar_vert.style.left = "2px";
+bar_horiz.style.top = "&#50;&#112;&#120;";
+bar_horiz.style.left = "&#48;&#112;&#120;";
+bar_vert.style.top = "&#48;&#112;&#120;";
+bar_vert.style.left = "&#50;&#112;&#120;";
 // if there's an existing star, remove it
 if (star[i]) {
     document.body.removeChild(star[i])
@@ -282,14 +281,14 @@ window.addEventListener('resize', function () {
 for (let i = 0; i < sparkles; i++) {
     // clear all stars
     star_remaining_ticks[i] = null;
-star[i].style.left = "0px";
-star[i].style.top = "0px";
-star[i].style.visibility = "hidden";
+star[i].style.left = "&#48;&#112;&#120;";
+star[i].style.top = "&#48;&#112;&#120;";
+star[i].style.visibility = "&#104;&#105;&#100;&#100;&#101;&#110;";
 // clear all dots
 tiny_remaining_ticks[i] = null;
-tiny[i].style.top = '0px';
-tiny[i].style.left = '0px';
-tiny[i].style.visibility = "hidden";
+tiny[i].style.top = '&#48;&#112;&#120;';
+tiny[i].style.left = '&#48;&#112;&#120;';
+tiny[i].style.visibility = "&#104;&#105;&#100;&#100;&#101;&#110;";
 }
 // reset cached height last
 doc_height = document.documentElement.scrollHeight;
@@ -335,28 +334,28 @@ setTimeout("animate_sparkles(" + fps + ")", interval_milliseconds);
 // create a new star at some location
 function create_star(x, y, probability = 1.0) {
 // don't create star if it's out of bounds
-if (x + 5 >= doc_width || y + 5 >= doc_height) {
-return;
-}
-// if it's probablistic, give it a chance to do nothing
-if (Math.random() > probability) {
-return;
-}
-// get a color (for the star)
-function get_random_color() {
-    let c = [];
-c[0] = 255;
-c[1] = Math.floor(Math.random() * 256);
-c[2] = Math.floor(Math.random() * (256 - c[1] / 2));
-c.sort(function () {
-    return (0.5 - Math.random());
-});
-return ("rgb(" + c[0] + ", " + c[1] + ", " + c[2] + ")");
-}
-// which star index do we want to use (either a blank index, or the star closest to dying)
-let min_lifetime = sparkle_lifetime * 2 + 1;
-let min_index = NaN;
-for (let i = 0; i < sparkles; i++) {
+if (x + 5 >&#61;&#32;&#100;&#111;&#99;&#95;&#119;&#105;&#100;&#116;&#104;&#32;&#124;&#124;&#32;&#121;&#32;&#43;&#32;&#53;&#32;&#62;&#61;&#32;&#100;&#111;&#99;&#95;&#104;&#101;&#105;&#103;&#104;&#116;&#41;&#32;&#123;&#13;
+&#114;&#101;&#116;&#117;&#114;&#110;&#59;&#13;
+&#125;&#13;
+&#47;&#47;&#32;&#105;&#102;&#32;&#105;&#116;&#39;&#115;&#32;&#112;&#114;&#111;&#98;&#97;&#98;&#108;&#105;&#115;&#116;&#105;&#99;&#44;&#32;&#103;&#105;&#118;&#101;&#32;&#105;&#116;&#32;&#97;&#32;&#99;&#104;&#97;&#110;&#99;&#101;&#32;&#116;&#111;&#32;&#100;&#111;&#32;&#110;&#111;&#116;&#104;&#105;&#110;&#103;&#13;
+&#105;&#102;&#32;&#40;&#77;&#97;&#116;&#104;&#46;&#114;&#97;&#110;&#100;&#111;&#109;&#40;&#41;&#32;&#62;&#32;&#112;&#114;&#111;&#98;&#97;&#98;&#105;&#108;&#105;&#116;&#121;&#41;&#32;&#123;&#13;
+&#114;&#101;&#116;&#117;&#114;&#110;&#59;&#13;
+&#125;&#13;
+&#47;&#47;&#32;&#103;&#101;&#116;&#32;&#97;&#32;&#99;&#111;&#108;&#111;&#114;&#32;&#40;&#102;&#111;&#114;&#32;&#116;&#104;&#101;&#32;&#115;&#116;&#97;&#114;&#41;&#13;
+&#102;&#117;&#110;&#99;&#116;&#105;&#111;&#110;&#32;&#103;&#101;&#116;&#95;&#114;&#97;&#110;&#100;&#111;&#109;&#95;&#99;&#111;&#108;&#111;&#114;&#40;&#41;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#108;&#101;&#116;&#32;&#99;&#32;&#61;&#32;&#91;&#93;&#59;&#13;
+&#99;&#91;&#48;&#93;&#32;&#61;&#32;&#50;&#53;&#53;&#59;&#13;
+&#99;&#91;&#49;&#93;&#32;&#61;&#32;&#77;&#97;&#116;&#104;&#46;&#102;&#108;&#111;&#111;&#114;&#40;&#77;&#97;&#116;&#104;&#46;&#114;&#97;&#110;&#100;&#111;&#109;&#40;&#41;&#32;&#42;&#32;&#50;&#53;&#54;&#41;&#59;&#13;
+&#99;&#91;&#50;&#93;&#32;&#61;&#32;&#77;&#97;&#116;&#104;&#46;&#102;&#108;&#111;&#111;&#114;&#40;&#77;&#97;&#116;&#104;&#46;&#114;&#97;&#110;&#100;&#111;&#109;&#40;&#41;&#32;&#42;&#32;&#40;&#50;&#53;&#54;&#32;&#45;&#32;&#99;&#91;&#49;&#93;&#32;&#47;&#32;&#50;&#41;&#41;&#59;&#13;
+&#99;&#46;&#115;&#111;&#114;&#116;&#40;&#102;&#117;&#110;&#99;&#116;&#105;&#111;&#110;&#32;&#40;&#41;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#114;&#101;&#116;&#117;&#114;&#110;&#32;&#40;&#48;&#46;&#53;&#32;&#45;&#32;&#77;&#97;&#116;&#104;&#46;&#114;&#97;&#110;&#100;&#111;&#109;&#40;&#41;&#41;&#59;&#13;
+&#125;&#41;&#59;&#13;
+&#114;&#101;&#116;&#117;&#114;&#110;&#32;&#40;&#34;&#114;&#103;&#98;&#40;&#34;&#32;&#43;&#32;&#99;&#91;&#48;&#93;&#32;&#43;&#32;&#34;&#44;&#32;&#34;&#32;&#43;&#32;&#99;&#91;&#49;&#93;&#32;&#43;&#32;&#34;&#44;&#32;&#34;&#32;&#43;&#32;&#99;&#91;&#50;&#93;&#32;&#43;&#32;&#34;&#41;&#34;&#41;&#59;&#13;
+&#125;&#13;
+&#47;&#47;&#32;&#119;&#104;&#105;&#99;&#104;&#32;&#115;&#116;&#97;&#114;&#32;&#105;&#110;&#100;&#101;&#120;&#32;&#100;&#111;&#32;&#119;&#101;&#32;&#119;&#97;&#110;&#116;&#32;&#116;&#111;&#32;&#117;&#115;&#101;&#32;&#40;&#101;&#105;&#116;&#104;&#101;&#114;&#32;&#97;&#32;&#98;&#108;&#97;&#110;&#107;&#32;&#105;&#110;&#100;&#101;&#120;&#44;&#32;&#111;&#114;&#32;&#116;&#104;&#101;&#32;&#115;&#116;&#97;&#114;&#32;&#99;&#108;&#111;&#115;&#101;&#115;&#116;&#32;&#116;&#111;&#32;&#100;&#121;&#105;&#110;&#103;&#41;&#13;
+&#108;&#101;&#116;&#32;&#109;&#105;&#110;&#95;&#108;&#105;&#102;&#101;&#116;&#105;&#109;&#101;&#32;&#61;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#95;&#108;&#105;&#102;&#101;&#116;&#105;&#109;&#101;&#32;&#42;&#32;&#50;&#32;&#43;&#32;&#49;&#59;&#13;
+&#108;&#101;&#116;&#32;&#109;&#105;&#110;&#95;&#105;&#110;&#100;&#101;&#120;&#32;&#61;&#32;&#78;&#97;&#78;&#59;&#13;
+&#102;&#111;&#114;&#32;&#40;&#108;&#101;&#116;&#32;&#105;&#32;&#61;&#32;&#48;&#59;&#32;&#105;&#32;< sparkles; i++) {
 if (!star_remaining_ticks[i]) {
     min_lifetime = null;
 min_index = i;
@@ -373,44 +372,44 @@ if (min_lifetime) {
 var xxxxx = Math.floor(Math.random() * 256);
 var yyyyy = Math.floor(Math.random() * 256);
 var zzzzz = Math.floor(Math.random() * 256);
-var randombackgroundcolor = "rgb(" + xxxxx + "," + yyyyy + "," + zzzzz + ")";
+var randombackgroundcolor = "&#114;&#103;&#98;&#40;" + xxxxx + "," + yyyyy + "," + zzzzz + ")";
 // create a new star
-if (min_index >= 0) {
-    star_remaining_ticks[min_index] = sparkle_lifetime * 2;
-star_x[min_index] = x;
-star[min_index].style.left = x + "px";
-star_y[min_index] = y;
-star[min_index].style.top = y + "px";
-star[min_index].style.clip = "rect(0px, 5px, 5px, 0px)";
-star[min_index].childNodes[0].style.backgroundColor =
-star[min_index].childNodes[1].style.backgroundColor = randombackgroundcolor;
-star[min_index].style.visibility = "visible";
-return min_index
-}
-}
-// update one star
-function update_star(i) {
-// if star doesn't exist, exit early
-if (star_remaining_ticks[i] === null) {
-return false;
-}
-// tick the lifetime of the star
-star_remaining_ticks[i] -= 1;
-// star is dead?
-if (star_remaining_ticks[i] === 0) {
-    star_to_tiny(i);
-return false;
-}
-// star is only half-alive, shrink it
-if (star_remaining_ticks[i] === sparkle_lifetime) {
-    star[i].style.clip = "rect(1px, 4px, 4px, 1px)"
-}
-// move the star
-if (star_remaining_ticks[i] > 0) {
-    star_y[i] += 1 + 3 * Math.random();
-star_x[i] += (i % 5 - 2) / 5;
-// only move star if it's in-bounds, otherwise, kill it below
-if (star_y[i] + 5 < doc_height && star_x[i] + 5 < doc_width) {
+if (min_index >&#61;&#32;&#48;&#41;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#115;&#116;&#97;&#114;&#95;&#114;&#101;&#109;&#97;&#105;&#110;&#105;&#110;&#103;&#95;&#116;&#105;&#99;&#107;&#115;&#91;&#109;&#105;&#110;&#95;&#105;&#110;&#100;&#101;&#120;&#93;&#32;&#61;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#95;&#108;&#105;&#102;&#101;&#116;&#105;&#109;&#101;&#32;&#42;&#32;&#50;&#59;&#13;
+&#115;&#116;&#97;&#114;&#95;&#120;&#91;&#109;&#105;&#110;&#95;&#105;&#110;&#100;&#101;&#120;&#93;&#32;&#61;&#32;&#120;&#59;&#13;
+&#115;&#116;&#97;&#114;&#91;&#109;&#105;&#110;&#95;&#105;&#110;&#100;&#101;&#120;&#93;&#46;&#115;&#116;&#121;&#108;&#101;&#46;&#108;&#101;&#102;&#116;&#32;&#61;&#32;&#120;&#32;&#43;&#32;&#34;&#112;&#120;&#34;&#59;&#13;
+&#115;&#116;&#97;&#114;&#95;&#121;&#91;&#109;&#105;&#110;&#95;&#105;&#110;&#100;&#101;&#120;&#93;&#32;&#61;&#32;&#121;&#59;&#13;
+&#115;&#116;&#97;&#114;&#91;&#109;&#105;&#110;&#95;&#105;&#110;&#100;&#101;&#120;&#93;&#46;&#115;&#116;&#121;&#108;&#101;&#46;&#116;&#111;&#112;&#32;&#61;&#32;&#121;&#32;&#43;&#32;&#34;&#112;&#120;&#34;&#59;&#13;
+&#115;&#116;&#97;&#114;&#91;&#109;&#105;&#110;&#95;&#105;&#110;&#100;&#101;&#120;&#93;&#46;&#115;&#116;&#121;&#108;&#101;&#46;&#99;&#108;&#105;&#112;&#32;&#61;&#32;&#34;&#114;&#101;&#99;&#116;&#40;&#48;&#112;&#120;&#44;&#32;&#53;&#112;&#120;&#44;&#32;&#53;&#112;&#120;&#44;&#32;&#48;&#112;&#120;&#41;&#34;&#59;&#13;
+&#115;&#116;&#97;&#114;&#91;&#109;&#105;&#110;&#95;&#105;&#110;&#100;&#101;&#120;&#93;&#46;&#99;&#104;&#105;&#108;&#100;&#78;&#111;&#100;&#101;&#115;&#91;&#48;&#93;&#46;&#115;&#116;&#121;&#108;&#101;&#46;&#98;&#97;&#99;&#107;&#103;&#114;&#111;&#117;&#110;&#100;&#67;&#111;&#108;&#111;&#114;&#32;&#61;&#13;
+&#115;&#116;&#97;&#114;&#91;&#109;&#105;&#110;&#95;&#105;&#110;&#100;&#101;&#120;&#93;&#46;&#99;&#104;&#105;&#108;&#100;&#78;&#111;&#100;&#101;&#115;&#91;&#49;&#93;&#46;&#115;&#116;&#121;&#108;&#101;&#46;&#98;&#97;&#99;&#107;&#103;&#114;&#111;&#117;&#110;&#100;&#67;&#111;&#108;&#111;&#114;&#32;&#61;&#32;&#114;&#97;&#110;&#100;&#111;&#109;&#98;&#97;&#99;&#107;&#103;&#114;&#111;&#117;&#110;&#100;&#99;&#111;&#108;&#111;&#114;&#59;&#13;
+&#115;&#116;&#97;&#114;&#91;&#109;&#105;&#110;&#95;&#105;&#110;&#100;&#101;&#120;&#93;&#46;&#115;&#116;&#121;&#108;&#101;&#46;&#118;&#105;&#115;&#105;&#98;&#105;&#108;&#105;&#116;&#121;&#32;&#61;&#32;&#34;&#118;&#105;&#115;&#105;&#98;&#108;&#101;&#34;&#59;&#13;
+&#114;&#101;&#116;&#117;&#114;&#110;&#32;&#109;&#105;&#110;&#95;&#105;&#110;&#100;&#101;&#120;&#13;
+&#125;&#13;
+&#125;&#13;
+&#47;&#47;&#32;&#117;&#112;&#100;&#97;&#116;&#101;&#32;&#111;&#110;&#101;&#32;&#115;&#116;&#97;&#114;&#13;
+&#102;&#117;&#110;&#99;&#116;&#105;&#111;&#110;&#32;&#117;&#112;&#100;&#97;&#116;&#101;&#95;&#115;&#116;&#97;&#114;&#40;&#105;&#41;&#32;&#123;&#13;
+&#47;&#47;&#32;&#105;&#102;&#32;&#115;&#116;&#97;&#114;&#32;&#100;&#111;&#101;&#115;&#110;&#39;&#116;&#32;&#101;&#120;&#105;&#115;&#116;&#44;&#32;&#101;&#120;&#105;&#116;&#32;&#101;&#97;&#114;&#108;&#121;&#13;
+&#105;&#102;&#32;&#40;&#115;&#116;&#97;&#114;&#95;&#114;&#101;&#109;&#97;&#105;&#110;&#105;&#110;&#103;&#95;&#116;&#105;&#99;&#107;&#115;&#91;&#105;&#93;&#32;&#61;&#61;&#61;&#32;&#110;&#117;&#108;&#108;&#41;&#32;&#123;&#13;
+&#114;&#101;&#116;&#117;&#114;&#110;&#32;&#102;&#97;&#108;&#115;&#101;&#59;&#13;
+&#125;&#13;
+&#47;&#47;&#32;&#116;&#105;&#99;&#107;&#32;&#116;&#104;&#101;&#32;&#108;&#105;&#102;&#101;&#116;&#105;&#109;&#101;&#32;&#111;&#102;&#32;&#116;&#104;&#101;&#32;&#115;&#116;&#97;&#114;&#13;
+&#115;&#116;&#97;&#114;&#95;&#114;&#101;&#109;&#97;&#105;&#110;&#105;&#110;&#103;&#95;&#116;&#105;&#99;&#107;&#115;&#91;&#105;&#93;&#32;&#45;&#61;&#32;&#49;&#59;&#13;
+&#47;&#47;&#32;&#115;&#116;&#97;&#114;&#32;&#105;&#115;&#32;&#100;&#101;&#97;&#100;&#63;&#13;
+&#105;&#102;&#32;&#40;&#115;&#116;&#97;&#114;&#95;&#114;&#101;&#109;&#97;&#105;&#110;&#105;&#110;&#103;&#95;&#116;&#105;&#99;&#107;&#115;&#91;&#105;&#93;&#32;&#61;&#61;&#61;&#32;&#48;&#41;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#115;&#116;&#97;&#114;&#95;&#116;&#111;&#95;&#116;&#105;&#110;&#121;&#40;&#105;&#41;&#59;&#13;
+&#114;&#101;&#116;&#117;&#114;&#110;&#32;&#102;&#97;&#108;&#115;&#101;&#59;&#13;
+&#125;&#13;
+&#47;&#47;&#32;&#115;&#116;&#97;&#114;&#32;&#105;&#115;&#32;&#111;&#110;&#108;&#121;&#32;&#104;&#97;&#108;&#102;&#45;&#97;&#108;&#105;&#118;&#101;&#44;&#32;&#115;&#104;&#114;&#105;&#110;&#107;&#32;&#105;&#116;&#13;
+&#105;&#102;&#32;&#40;&#115;&#116;&#97;&#114;&#95;&#114;&#101;&#109;&#97;&#105;&#110;&#105;&#110;&#103;&#95;&#116;&#105;&#99;&#107;&#115;&#91;&#105;&#93;&#32;&#61;&#61;&#61;&#32;&#115;&#112;&#97;&#114;&#107;&#108;&#101;&#95;&#108;&#105;&#102;&#101;&#116;&#105;&#109;&#101;&#41;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#115;&#116;&#97;&#114;&#91;&#105;&#93;&#46;&#115;&#116;&#121;&#108;&#101;&#46;&#99;&#108;&#105;&#112;&#32;&#61;&#32;&#34;&#114;&#101;&#99;&#116;&#40;&#49;&#112;&#120;&#44;&#32;&#52;&#112;&#120;&#44;&#32;&#52;&#112;&#120;&#44;&#32;&#49;&#112;&#120;&#41;&#34;&#13;
+&#125;&#13;
+&#47;&#47;&#32;&#109;&#111;&#118;&#101;&#32;&#116;&#104;&#101;&#32;&#115;&#116;&#97;&#114;&#13;
+&#105;&#102;&#32;&#40;&#115;&#116;&#97;&#114;&#95;&#114;&#101;&#109;&#97;&#105;&#110;&#105;&#110;&#103;&#95;&#116;&#105;&#99;&#107;&#115;&#91;&#105;&#93;&#32;&#62;&#32;&#48;&#41;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#115;&#116;&#97;&#114;&#95;&#121;&#91;&#105;&#93;&#32;&#43;&#61;&#32;&#49;&#32;&#43;&#32;&#51;&#32;&#42;&#32;&#77;&#97;&#116;&#104;&#46;&#114;&#97;&#110;&#100;&#111;&#109;&#40;&#41;&#59;&#13;
+&#115;&#116;&#97;&#114;&#95;&#120;&#91;&#105;&#93;&#32;&#43;&#61;&#32;&#40;&#105;&#32;&#37;&#32;&#53;&#32;&#45;&#32;&#50;&#41;&#32;&#47;&#32;&#53;&#59;&#13;
+&#47;&#47;&#32;&#111;&#110;&#108;&#121;&#32;&#109;&#111;&#118;&#101;&#32;&#115;&#116;&#97;&#114;&#32;&#105;&#102;&#32;&#105;&#116;&#39;&#115;&#32;&#105;&#110;&#45;&#98;&#111;&#117;&#110;&#100;&#115;&#44;&#32;&#111;&#116;&#104;&#101;&#114;&#119;&#105;&#115;&#101;&#44;&#32;&#107;&#105;&#108;&#108;&#32;&#105;&#116;&#32;&#98;&#101;&#108;&#111;&#119;&#13;
+&#105;&#102;&#32;&#40;&#115;&#116;&#97;&#114;&#95;&#121;&#91;&#105;&#93;&#32;&#43;&#32;&#53;&#32;< doc_height && star_x[i] + 5 < doc_width) {
     star[i].style.top = star_y[i] + "px";
 star[i].style.left = star_x[i] + "px";
 return true;
@@ -418,9 +417,9 @@ return true;
 }
 // kill the star
 star_remaining_ticks[i] = null;
-star[i].style.left = "0px";
-star[i].style.top = "0px";
-star[i].style.visibility = "hidden";
+star[i].style.left = "&#48;&#112;&#120;";
+star[i].style.top = "&#48;&#112;&#120;";
+star[i].style.visibility = "&#104;&#105;&#100;&#100;&#101;&#110;";
 return false;
 }
 // convert star to dot
@@ -436,17 +435,17 @@ tiny_y[i] = star_y[i];
 tiny[i].style.top = star_y[i] + "px";
 tiny_x[i] = star_x[i];
 tiny[i].style.left = star_x[i] + "px";
-tiny[i].style.width = "2px";
-tiny[i].style.height = "2px";
+tiny[i].style.width = "&#50;&#112;&#120;";
+tiny[i].style.height = "&#50;&#112;&#120;";
 tiny[i].style.backgroundColor = star[i].childNodes[0].style.backgroundColor;
-star[i].style.visibility = "hidden";
-tiny[i].style.visibility = "visible";
+star[i].style.visibility = "&#104;&#105;&#100;&#100;&#101;&#110;";
+tiny[i].style.visibility = "&#118;&#105;&#115;&#105;&#98;&#108;&#101;";
 }
 // remove star
 star_remaining_ticks[i] = null;
-star[i].style.left = "0px";
-star[i].style.top = "0px";
-star[i].style.visibility = "hidden";
+star[i].style.left = "&#48;&#112;&#120;";
+star[i].style.top = "&#48;&#112;&#120;";
+star[i].style.visibility = "&#104;&#105;&#100;&#100;&#101;&#110;";
 }
 // update one dot
 function update_tiny(i) {
@@ -458,15 +457,15 @@ return false;
 tiny_remaining_ticks[i] -= 1;
 // dot is half-dead, shrink it
 if (tiny_remaining_ticks[i] === sparkle_lifetime) {
-    tiny[i].style.width = "1px";
-tiny[i].style.height = "1px";
+    tiny[i].style.width = "&#49;&#112;&#120;";
+tiny[i].style.height = "&#49;&#112;&#120;";
 }
 // move the dot
-if (tiny_remaining_ticks[i] > 0) {
-    tiny_y[i] += 1 + 2 * Math.random();
-tiny_x[i] += (i % 4 - 2) / 4;
-// only allow move if dot is still in-bounds, else kill the dot (below)
-if (tiny_y[i] + 3 < doc_height && tiny_x[i] + 3 < doc_width) {
+if (tiny_remaining_ticks[i] >&#32;&#48;&#41;&#32;&#123;&#13;
+&#32;&#32;&#32;&#32;&#116;&#105;&#110;&#121;&#95;&#121;&#91;&#105;&#93;&#32;&#43;&#61;&#32;&#49;&#32;&#43;&#32;&#50;&#32;&#42;&#32;&#77;&#97;&#116;&#104;&#46;&#114;&#97;&#110;&#100;&#111;&#109;&#40;&#41;&#59;&#13;
+&#116;&#105;&#110;&#121;&#95;&#120;&#91;&#105;&#93;&#32;&#43;&#61;&#32;&#40;&#105;&#32;&#37;&#32;&#52;&#32;&#45;&#32;&#50;&#41;&#32;&#47;&#32;&#52;&#59;&#13;
+&#47;&#47;&#32;&#111;&#110;&#108;&#121;&#32;&#97;&#108;&#108;&#111;&#119;&#32;&#109;&#111;&#118;&#101;&#32;&#105;&#102;&#32;&#100;&#111;&#116;&#32;&#105;&#115;&#32;&#115;&#116;&#105;&#108;&#108;&#32;&#105;&#110;&#45;&#98;&#111;&#117;&#110;&#100;&#115;&#44;&#32;&#101;&#108;&#115;&#101;&#32;&#107;&#105;&#108;&#108;&#32;&#116;&#104;&#101;&#32;&#100;&#111;&#116;&#32;&#40;&#98;&#101;&#108;&#111;&#119;&#41;&#13;
+&#105;&#102;&#32;&#40;&#116;&#105;&#110;&#121;&#95;&#121;&#91;&#105;&#93;&#32;&#43;&#32;&#51;&#32;< doc_height && tiny_x[i] + 3 < doc_width) {
     tiny[i].style.top = tiny_y[i] + "px";
 tiny[i].style.left = tiny_x[i] + "px";
 return true
@@ -474,13 +473,13 @@ return true
 }
 // dot is dead
 tiny_remaining_ticks[i] = null;
-tiny[i].style.top = '0px';
-tiny[i].style.left = '0px';
-tiny[i].style.visibility = "hidden";
+tiny[i].style.top = '&#48;&#112;&#120;';
+tiny[i].style.left = '&#48;&#112;&#120;';
+tiny[i].style.visibility = "&#104;&#105;&#100;&#100;&#101;&#110;";
 return false
 }
-    </script>
-</body>
-
-
-</html>
+    </script>&#13;
+</body>&#13;
+&#13;
+&#13;
+</html></noscript>
